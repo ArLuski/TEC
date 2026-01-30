@@ -6,87 +6,87 @@ authors:
 - Pierre Morin
 configurations:
   reqs-huracan: latest
-acronyms:
-    AM: Additive Manufacturing
-    CF: Cost File
-    CHF: Critical Heat Flux
-    CT: Computed Tomography
-    DED: Direct Energy Deposition
-    DF: Definition File
-    DM: Development Model
-    DPPF: Relative Pressure Drop Fuel (MFV+injector) 
-    DPPIF: Relative Pressure Drop Injector Fuel 
-    DPPIO: Relative Pressure Drop Injector Oxidizer 
-    DPPO: Relative Pressure Drop Oxidizer (MOV+injector) 
-    DPRC: Pressure Drop Regenerative Circuit 
-    DTRC: Temperature increase Regenerative Circuit
-    HF: High Frequency
-    HTD: Heat Transfer Deterioration
-    IGS: Ignition System
-    IH: Injector Head
-    ISP_LOSS_COOLING: Isp loss due to film cooling
-    ISP_SL: engine ISP Sea Level
-    ISP_VAC: engine ISP VACuum
-    ISPCC_SL: Isp Combustion Chamber Seal Level
-    ISPCC_VAC: Isp Combustion Chamber Vacuum
-    JF: Justification File
-    LF: Low Frequency
-    LPBF: Laser Powder Bed Fusion
-    MCC: Main Combustion Chamber
-    MFCI: Mass flow Fuel regenerative Circuit Inlet
-    MFCO: Mass flow Fuel regenerative Circuit Outlet
-    MFII: Mass flow Fuel Injector Inlet
-    MFIO: Mass flow Fuel Injector Outlet
-    MOII: Mass flow Oxidizer Injector Inlet
-    MRC: Mixture Ratio Combustion chamber
-    NA: Not Applicable
-    NEL: Nozzel Extension Long
-    NES: Nozzle Extension Short
-    PCC: Pressure Combustion Chamber
-    PFCI: Pressure Fuel regenerative Circuit Inlet
-    PFCO: Pressure Fuel regenerative Circuit Outlet
-    PFIHI: Pressure Fuel Injector Head Inlet
-    PFII: Pressure Fuel Injector (dome) Inlet
-    PFIO: Pressure Fuel Injector Outlet
-    POIHI: Pressure Oxidizer Injector Head Inlet
-    POII: Pressure Oxidizer Injector (dome) Inlet
-    RC: Regenerative Circuit
-    TFCI: Temperature Fuel regenerative Circuit Inlet
-    TFCO: Temperature Fuel regenerative Circuit Outlet
-    TFIHI: Temperature Fuel Injector Head Inlet
-    TFII: Temperature Fuel Injector Inlet
-    TFIO: Temperature Fuel Injector Outlet
-    THRUST_SL: THRUST Seal Level
-    THRUST_VAC: THRUST VACuum
-    TOIHI: Temperature Oxidizer Injector Head Inlet
-    TOII: Temperature Oxidizer Injector Inlet
-    TS: Technical Specification
-    TW_MAX: MAXimum hot-gas side Wall Temperature
-    VCD: Verification Control Document
----
+  acronyms:
+      AM: Additive Manufacturing
+          CF: Cost File
+              CHF: Critical Heat Flux
+                  CT: Computed Tomography
+                      DED: Direct Energy Deposition
+                          DF: Definition File
+                              DM: Development Model
+                                  DPPF: Relative Pressure Drop Fuel (MFV+injector) 
+                                      DPPIF: Relative Pressure Drop Injector Fuel 
+                                          DPPIO: Relative Pressure Drop Injector Oxidizer 
+                                              DPPO: Relative Pressure Drop Oxidizer (MOV+injector) 
+                                                  DPRC: Pressure Drop Regenerative Circuit 
+                                                      DTRC: Temperature increase Regenerative Circuit
+                                                          HF: High Frequency
+                                                              HTD: Heat Transfer Deterioration
+                                                                  IGS: Ignition System
+                                                                      IH: Injector Head
+                                                                          ISP_LOSS_COOLING: Isp loss due to film cooling
+                                                                              ISP_SL: engine ISP Sea Level
+                                                                                  ISP_VAC: engine ISP VACuum
+                                                                                      ISPCC_SL: Isp Combustion Chamber Seal Level
+                                                                                          ISPCC_VAC: Isp Combustion Chamber Vacuum
+                                                                                              JF: Justification File
+                                                                                                  LF: Low Frequency
+                                                                                                      LPBF: Laser Powder Bed Fusion
+                                                                                                          MCC: Main Combustion Chamber
+                                                                                                              MFCI: Mass flow Fuel regenerative Circuit Inlet
+                                                                                                                  MFCO: Mass flow Fuel regenerative Circuit Outlet
+                                                                                                                      MFII: Mass flow Fuel Injector Inlet
+                                                                                                                          MFIO: Mass flow Fuel Injector Outlet
+                                                                                                                              MOII: Mass flow Oxidizer Injector Inlet
+                                                                                                                                  MRC: Mixture Ratio Combustion chamber
+                                                                                                                                      NA: Not Applicable
+                                                                                                                                          NEL: Nozzel Extension Long
+                                                                                                                                              NES: Nozzle Extension Short
+                                                                                                                                                  PCC: Pressure Combustion Chamber
+                                                                                                                                                      PFCI: Pressure Fuel regenerative Circuit Inlet
+                                                                                                                                                          PFCO: Pressure Fuel regenerative Circuit Outlet
+                                                                                                                                                              PFIHI: Pressure Fuel Injector Head Inlet
+                                                                                                                                                                  PFII: Pressure Fuel Injector (dome) Inlet
+                                                                                                                                                                      PFIO: Pressure Fuel Injector Outlet
+                                                                                                                                                                          POIHI: Pressure Oxidizer Injector Head Inlet
+                                                                                                                                                                              POII: Pressure Oxidizer Injector (dome) Inlet
+                                                                                                                                                                                  RC: Regenerative Circuit
+                                                                                                                                                                                      TFCI: Temperature Fuel regenerative Circuit Inlet
+                                                                                                                                                                                          TFCO: Temperature Fuel regenerative Circuit Outlet
+                                                                                                                                                                                              TFIHI: Temperature Fuel Injector Head Inlet
+                                                                                                                                                                                                  TFII: Temperature Fuel Injector Inlet
+                                                                                                                                                                                                      TFIO: Temperature Fuel Injector Outlet
+                                                                                                                                                                                                          THRUST_SL: THRUST Seal Level
+                                                                                                                                                                                                              THRUST_VAC: THRUST VACuum
+                                                                                                                                                                                                                  TOIHI: Temperature Oxidizer Injector Head Inlet
+                                                                                                                                                                                                                      TOII: Temperature Oxidizer Injector Inlet
+                                                                                                                                                                                                                          TS: Technical Specification
+                                                                                                                                                                                                                              TW_MAX: MAXimum hot-gas side Wall Temperature
+                                                                                                                                                                                                                                  VCD: Verification Control Document
+                                                                                                                                                                                                                                  ---
 
-<!---
-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-ATTENTION:
-when talking about simulations, it is important to differentiate between the development model and the flight like model
-For IH and MCC there is not much difference because current designs are close to flight like
-For IS and NE there can be significant differences between development and flight design
-Ideally, we should present the flight like. If we have both we can present both. If we do not have both, we mention
-that the analysis was done for a development model
--->
+                                                                                                                                                                                                                                  <!---
+                                                                                                                                                                                                                                  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+                                                                                                                                                                                                                                  ATTENTION:
+                                                                                                                                                                                                                                  when talking about simulations, it is important to differentiate between the development model and the flight like model
+                                                                                                                                                                                                                                  For IH and MCC there is not much difference because current designs are close to flight like
+                                                                                                                                                                                                                                  For IS and NE there can be significant differences between development and flight design
+                                                                                                                                                                                                                                  Ideally, we should present the flight like. If we have both we can present both. If we do not have both, we mention
+                                                                                                                                                                                                                                  that the analysis was done for a development model
+                                                                                                                                                                                                                                  -->
 
 
-## Introduction
+                                                                                                                                                                                                                                  ## Introduction
 
-### Scope
+                                                                                                                                                                                                                                  ### Scope
 
-The definition file serves as the identity card of the Thrust Chamber Assembly (TCA), detailing its intended capabilities and interactions with other systems. The document aims to provide a thorough understanding of the following key aspects: 
+                                                                                                                                                                                                                                  The definition file serves as the identity card of the Thrust Chamber Assembly (TCA), detailing its intended capabilities and interactions with other systems. The document aims to provide a thorough understanding of the following key aspects: 
 
-- Overview of the components that constitute the TCA and their main purposes
-- Description of the underlying principles of thrust production and the main physical phenomena that govern the behavior of the TCA
-- Identification of the operating envelope and the main performance metrics such as thrust, efficiency and ISP
-- Description of the mechanical characteristics and interaction with the rest of the engine 
-
+                                                                                                                                                                                                                                  - Overview of the components that constitute the TCA and their main purposes
+                                                                                                                                                                                                                                  - Description of the underlying principles of thrust production and the main physical phenomena that govern the behavior of the TCA
+                                                                                                                                                                                                                                  - Identification of the operating envelope and the main performance metrics such as thrust, efficiency and ISP
+                                                                                                                                                                                                                                  - Description of the mechanical characteristics and interaction with the rest of the engine 
+                                                                                                                                                                                                                                  
 ### Reference
 
 - [RD1] TEC-FRA-DOC-2024-01142 - TCA Justification File
