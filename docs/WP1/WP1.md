@@ -61,7 +61,17 @@ Based on the preliminary requirements initially shared by TEC for this activity 
 
 # 2. Requirements
 
-## 2.1. Functional requirements
+## 2.1. Environmental requirements  
+
+**REQ-00X - Pollution requirements**  
+Sensitive areas, such as regions of relative motion, shall be protected against sand particles with an average size of 0.2 mm at a temperature of 49.6 °C [RD3].  
+________________________
+
+**REQ-00X - Ambient requirements**  
+
+According to the system requirements of *Oneiros*, the sea level conditions are defined by an pressure of 0.994 bar to 1.0276 bar and 12 % to 91 % humidity. The ambient temperature ranges from 8.3 °C to 49.6 °C. [RD3]  
+
+## 2.2. Functional requirements
 
 **REQ-003 - Operational gimbal capability**  
 The GMA design provides a deflection capability of +/-10 ° per axis (pitch and yaw), which cover´s GNC needs and mechanical limits of the engine components (e.g. bellows, actuators).  
@@ -94,8 +104,7 @@ ________________________
 **REQ-015 - Geometrical interface**  
 For the lower attachment of the GMA, the usable surface of the IH features a ring with an inner diameter of Ø100 mm and an outer diameter of Ø170 mm. In total, eight through-holes (Ø9 mm each) are available, spaced at 45° intervals (symetrically along PCD), to fasten the GMA to the IH using eight M8 fasteners (minimum tensile ultimate strength per fastener: 800 MPa).  
 
-
-## 2.2. Mechanical and thermal requirements  
+## 2.3. Mechanical and thermal requirements  
 
 **REQ-018 - Friction coefficient**  
 To reduce the breaking torque of the actuators, the GMA shall provide a constant friction coefficient equal or lower than 0.1 under mechanical and thermal operating conditions.  
@@ -123,17 +132,6 @@ ________________________
 
 **REQ-021 - Thermal transient** 
 Until steady state conditions are achieved, transient conditions dominate. A cooling from ambient 280 K to 180 K within 10 s is to be considered linearly, with a slope of 10 K/s. This is to be taken into account at the GMA surface, that is connected to the IH upper flange. 
-________________________
-
-## 2.3. Environmental requirements  
-
-**REQ-00X - Polution requirements**  
-Sensitive areas, such as regions of relative motion, shall be protected against sand particles with an average size of 0.2 mm at a temperature of 49.6 °C [RD3].  
-________________________
-
-**REQ-00X - Ambient requirements**  
-
-According to the system requirements of *Oneiros*, the sea level conditions are defined by an pressure of 0.994 bar to 1.0276 bar and 12 % to 91 % humidity. The ambient temperature ranges from 8.3 °C to 49.6 °C. [RD3]  
 ________________________
 
 ## 2.4. Growth potential requirements
