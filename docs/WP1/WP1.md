@@ -1,176 +1,163 @@
 ---
-title: |
-  **Development of Gimbal Mount Assembly**  
+title: |  
+  **Gimbal Mount Assembly**  
   Requirement Consolidation
-author: "Artjom Lukanowski on behalf of The Exploration Company SAS"
+author: Artjom Lukanowski on behalf of The Exploration Company SAS     
 version: "001"
-date: \today
+date: "Version 001 created on \\today"
 output:
   pdf_document:
-    number_sections: true
+    toc: true
+    toc_depth: 3
+
 header-includes:
-  - \usepackage{tocloft}                     # Dotted TOC
-  - \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
-  - \setcounter{secnumdepth}{3}             # Number up to subsubsections
+  - \usepackage{titling}
+  - \renewcommand{\maketitle}{
+      \begin{titlepage}
+        \thispagestyle{empty}
+        \vspace*{\fill}
+        \begin{center}
+          {\huge\normalfont \thetitle\par}
+          \vspace{2em}
+          {\normalsize\normalfont \theauthor\par}
+          \vspace{1em}
+          {\normalsize\normalfont \thedate\par}
+        \end{center}
+        \vspace*{\fill}
+      \end{titlepage}
+    }
   - \usepackage[a4paper,left=20mm,right=20mm,top=25mm,bottom=25mm]{geometry}
-  - \usepackage{tocloft}
-  - \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
-  - \setcounter{secnumdepth}{3}
   - \usepackage{fancyhdr}
+  - \fancyhead[L]{\nouppercase{\leftmark}}
   - \pagestyle{fancy}
-  - \fancyhf{} 
-  - \fancyhead[R]{Gimbal Mount Assembly - Requirement Consolidation}
+  - \fancyhf{}
+  - \fancyhead[R]{Gimbal Mount Assembly - Requirement Consolidation - Version 001}
   - \renewcommand{\headrulewidth}{0.4pt}
   - \fancyfoot[C]{\thepage}
+  - \usepackage{hyperref}
+  - 
 ---
-
-\clearpage
+\pagenumbering{roman}
+\setcounter{page}{1}
 \tableofcontents
 \clearpage
-
-\setcounter{page}{1}
 \pagenumbering{arabic}
 
+# 1. Introduction
 
-# Introduction
+## 1.1. Scope
+Based on the preliminary requirements initially shared by TEC for this activity [RD1], this document refines the key performance parameters. These updated requirements primarily relate to the Hopper Ground Demonstrator *Oneiros*, which is also part of a de-risking activity for the *Huracan* propulsive system [RD2]. During the development of the GMA, the focus will be on prioritizing *Oneiros* requirements, while also considering intentions for upcoming design iterations of the *Huracan* engine and its components. 
 
-## Scope
-Based on preliminary requirements initially shared by TEC for this activity [RD1], this document refines the key performance parameters. These updated requirements are primarily associated to the Hopper Ground Demonstrator "Oneiros", which is also part of a de-risking activity of the "Huracan" propulsive system [RD2]. Since the engine design will be close to the flight configuration of the Lunar Mission "Hilal", the current constraints and intentions of the "Huracan" engine are taken into account for future utilization of the GMA. This is mainly covered under the chapter 1.3.4 and applies only if hard requirements (functional, mechanical, thermal, environmental) are met and business related constraints (budget, delivery time etc.) remain unchanged. 
+##  1.2. Reference
+[RD1] Consultant Agreement 12.12.2025 - Docusign Envelope ID: AA5722EA-0E20-45A6-BFE2-2B6D313A7FF3
 
-##  Reference
+[RD2] Design Description and Justification File - TEC-ITA-DOC-2025-01011 - Version 3
 
-[RD1] Consultant Agreement 12.12.2025- Docusign Envelope ID:  AA5722EA-0E20-45A6-BFE2-2B6D313A7FF3
-
-[RD2] TEC-ITA-DOC-2025-01011 - Version 3 - Design Description and Justification File 
-
-[RD3] TEC-ITA-DOC-2025-01017 - Version 0 - System Requirements Document
+[RD3] System Requirements Document - TEC-ITA-DOC-2025-01017 - Version 0
 
 [RD4] Modern Engineering for design of liquid propelleant rocket engines - D.Huzel / D.Huang, Vol. 147, p. 341
 
 \clearpage
 
-# Requirements
+# 2. Requirements
 
-## Functional requirements
-
+## 2.1. Functional requirements
 
 **REQ-003 - Operational gimbal capability**  
-
-The GMA design provides a deflection capability of +/-10° per axis (pitch and yaw) to serve intended GNC manfouvers during operational flight conditions.
-
+The GMA design provides a deflection capability of +/-10 ° per axis (pitch and yaw), which cover´s GNC needs and mechanical limits of the engine components (e.g. bellows, actuators).  
+________________________
 
 **REQ-00X - Max. gimbal capability**  
-
-For off-nominal cases, emergency authority of the design, the max. gimbal deflection shall not exceed +/-12°. 
-
+For off-nominal cases and emergency authority of the design, the max. gimbal angle shall not exceed +/-12 °.   
+________________________
 
 **REQ-002 - Rotation axis**  
-
-To provide full pitch and yaw control capability, a two-axis rotation shall be provided. Both axis are located perpendicular (90°) with respect to each other in the same horizontal plane. 
-
-
+To provide full pitch and yaw control capability, a two-axis rotation mechanism shall be implemented. Both axes are positioned perpendicular to each other within the same horizontal plane.
+________________________
 
 **REQ-004 - Angular velocity**  
-
-To compromise GNC needs with mechanical constraints of the engine such as the actuator capacity, the max. angular velocity of the engine is 20°/s. 
-
-
+To compromise GNC needs with mechanical constraints of the engine such as the actuator capacity, the max. angular velocity of the engine is 20 °/s.  
+________________________
 
 **REQ-005 - Angular acceleration**  
-
-The engine´s acceleration and hence, the capability of the GMA shall be max. 25 rad/s².
-
-
+The engine´s acceleration and hence, the capability of the GMA shall be max. 25 rad/s².  
+________________________
 
 **REQ-0014 - Mass**   
-
-The maximum mass of the GMA shall be equal or below 5kg with an mass measurement accuracy of +/-0,1%.
-
+The maximum mass of the GMA shall be equal or below 5 kg with an mass measurement accuracy of +/-0.1 %.  
+________________________
 
 **REQ-00X - Geometrical envelope**  
-
-A damage- and collision-free motion under worst case angle conditions is required between the Igniter´s main body (incl. it´s attachments) and the GMA geometry. A minimum clearance of 20 mm is to be considered between moving parts. The maximum geometrical limit of th GMA is given by the mass constraint, the loads and (thermo-)mechanical stress requirements mentioned in this document. The Ignition System´s main body (Ø70 mm) is designed with a vertically offset by 60 mm from the IH upper flange surface. 
-
+A damage- and collision-free motion under worst case angle conditions is required between the Igniter´s main body (incl. it´s attachments) and the GMA geometry. A minimum clearance of 20 mm is to be considered between moving parts. The maximum geometrical limit of th GMA is given by the mass constraint, the loads and (thermo-)mechanical stress requirements mentioned in this document. The Ignition System´s main body (Ø70 mm) is designed with a vertically offset by 60 mm from the IH upper flange surface.  
+________________________
 
 **REQ-015 - Geometrical interface**  
+For the lower attachment of the GMA, the usable surface of the IH features a ring with an inner diameter of Ø100 mm and an outer diameter of Ø170 mm. In total, eight through-holes (Ø9 mm each) are available, spaced at 45° intervals (symetrically along PCD), to fasten the GMA to the IH using eight M8 fasteners (minimum tensile ultimate strength per fastener: 800 MPa).  
 
-For the lower attachment of the GMA, the utilizable surface of the IH features a ring with an inner/outer diameter of Ø100mm/Ø170 mm. In total, 8x45°-Ø9mm through holes are available to fasten the GMA with the IH by 8xM8 fasteners (min. tensile strength per fastener 800 MPa). The fasteners are symmetrically distributed on the PCD.
 
-
-## Mechanical and Thermal requirements
-
+## 2.2. Mechanical and thermal requirements  
 
 **REQ-018 - Friction coefficient**  
-
-To reduce the breaking torque of the actuators, the GMA shall provide a friction coefficient equal/lower than 0.1 under sea level conditions, a total nominal thrust of 15 kN and thermal steady state condition of 160K at the gimbal attachment surface at the IH flange. 
-
+To reduce the breaking torque of the actuators, the GMA shall provide a constant friction coefficient equal or lower than 0.1 under mechanical and thermal operating conditions.  
+________________________
 
 **REQ-008 - Plastic Deformation and crack formation**  
+The GMA and its parts will not undergo plastic deformation, crack formation or other non-recoverable deformation when subjected to the operational conditions defined in this specification. Exceptions can be permissible if non-recoverable deformation is identified as a single, local phenomena, that can be justified by analysis.  
+________________________
 
-The GMA and its parts will not undergo plastic deformation, crack formation or other non-recoverable deformation when subjected to the operational conditions defined in this specification. Exceptions can be permissible if non-recoverable deformation is identified as a single, local phenomena, which can can justified by analysis. 
+**REQ-001 - Operating nominal thrust**  
+The GMA shall transmit a total nominal thrust load of 15 kN.  
+________________________
 
+**REQ-00x - (Quasi-)static thrust**  
+For single events, the GMA shall sustain an escessive load of 22.5 kN, which includes a safety factor of 1.5 applied to the nominal thrust.  
+________________________
 
-**REQ-001 - Nominal thrust**  
+**REQ-030 - Cycling**  
+The GMA shall sustain a minimum of 1000 cycles, which is derived from preliminary GNC-data.  
+________________________
 
-The GMA shall transmit a total nominal thrust load of 15 kN.
-
-
-**REQ-00x - (Quasi-)static thrust level**   
-
-For single events the GMA shall sustain an escessive load of 22.5 kN, which includes a safety factor of 1.5 applied to the nominal thrust.
-
-
-**REQ-030 - Cycling** 
-
-The GMA shall sustain a minimum of 1000 cycles, which is derived from preliminary GNC-data. 
-
-
-**REQ-020 - Operating temperature** 
-
-The nominal operating temperature at the GMA surface that is connected to the IH flange lies at 150K +/-10K. 
-
+**REQ-020 - Operating temperature**  
+The nominal operating temperature at the GMA surface that is connected to the IH flange lies at 120 K to 150 K.   
+________________________
 
 **REQ-021 - Thermal transient** 
+Until steady state conditions are achieved, transient conditions dominate. A cooling from ambient 280 K to 180 K within 10 s is to be considered linearly, with a slope of 10 K/s. This is to be taken into account at the GMA surface, that is connected to the IH upper flange. 
+________________________
 
-Until steady state conditions are achieved, transient conditions dominate. A cooling from ambient 280 K to 180 K within 10 s is to be considered in a linear relation ship with a slope of 10 K/s. This is to be taken into account at the GMA surface, that is connected to the IH. 
+## 2.3. Environmental requirements  
 
-
-## Environmental requirements
-
-
-**REQ-00X - Polution requirements** 
-
-Protection of sensitive areas (e.g. areas of relative motion) by sand particles of an average size of 0.2mm at a temperature of 49.6°C [RD3]
-
+**REQ-00X - Polution requirements**  
+Sensitive areas, such as regions of relative motion, shall be protected against sand particles with an average size of 0.2 mm at a temperature of 49.6 °C [RD3].  
+________________________
 
 **REQ-00X - Ambient requirements**  
 
-Following the system requirements of Oneiros, the sea level conditions are defined by an pressure of 0.994 bar to 1.0276 bar and 12% to 91% humidity. The ambient temperature ranges from 8.3°C to 49.6°C. [RD3]
+According to the system requirements of *Oneiros*, the sea level conditions are defined by an pressure of 0.994 bar to 1.0276 bar and 12 % to 91 % humidity. The ambient temperature ranges from 8.3 °C to 49.6 °C. [RD3]  
+________________________
 
-
-## Growth potential requirements
-
+## 2.4. Growth potential requirements
 
 **REQ-00x - Cycles**  
 
-For further utilization of the GMA for flight qualification and preperation for the moon mission, a value of 26520 cycles are targeted as long as no inspection intervals are intended. 
+For further utilization of the GMA for flight qualification and preperation for the moon mission, a value of 26520 cycles is targeted as long as no inspection intervals are intended.  
+________________________  
 
-
-
-**REQ-00x - Geometrical envelope** 
-
-The GMA design shall be flexible to adapt different kind of geometrical conditions. Future design intentions, where the Ignition System is meant to be printed in one compact part with the IH is to be considered. 
-
+**REQ-00x - Geometrical envelope**  
+The GMA design must be flexible to adapt to different geometrical conditions. Future plans, where the Ignition System is intended to be printed together with the IH as one compact part, should be taken into account.  
+________________________  
 
 **REQ-00x - Lateral misalignment**  
+To reduce demands to vehicle´s guidance and the engine-actuation system, the thrust vector must be prealigned in all three axis. Hence, the GMA shall contain features to compensate lateral misalignment up to +/-10 mm. [RD4]  
+________________________  
 
-To reduce demands to vehicle´s guidance and the engine-actuation system, the thrust vector must be prealigned in all three axis. Hence, the GMA shall contain features to compensate lateral misalignment up to +/-10 mm. [RD4]
+**REQ-00x - Vacuum environment**  
+The GMA performance in ambient conditions shall be adapted to operate feasibly in vacuum, especially concerning lubrication, thermal and consequently mechanical loads. 
 
 \clearpage
 
-# Acronym List
-
-The acronyms used in this document are listed below. 
+# 3. Acronym List  
+The acronyms used in this document are listed below.  
 
 | **Acronym**  | **Definition**   |
 |---|---|
