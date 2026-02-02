@@ -48,7 +48,7 @@ header-includes:
 # 1. Introduction
 
 ## 1.1. Scope
-Based on the preliminary requirements initially shared by TEC for this activity [RD1], this document refines the key performance parameters. These updated requirements primarily relate to the Hopper Ground Demonstrator *Oneiros*, which is also part of a de-risking activity for the *Huracan* propulsive system [RD2]. During the development of the GMA, the focus will be on prioritizing *Oneiros* requirements, while also considering intentions for upcoming design iterations of the *Huracan* engine and its components. 
+Based on the preliminary requirements initially shared by The Exploration Company (TEC) for this activity [RD1], this document refines the key performance parameters. These updated requirements primarily relate to the Hopper Ground Demonstrator *Oneiros*, which is also part of a de-risking activity for the *Huracan* propulsive system [RD2]. During the development of the Gimbal Mount Assembly (GMA), the focus will be on prioritizing *Oneiros* requirements, while also considering intentions for upcoming design iterations of the *Huracan* engine and its components. 
 
 ##  1.2. Reference
 [RD1] Consultant Agreement 12.12.2025 - Docusign Envelope ID: AA5722EA-0E20-45A6-BFE2-2B6D313A7FF3
@@ -108,7 +108,7 @@ ________________________
 
 **REQ-00X - Geometrical envelope**  
 
-A damage- and collision-free motion under worst case angle conditions is required between the Igniter´s main body (incl. it´s attachments) and the GMA geometry. A minimum clearance of 20 mm is to be considered between moving parts. The maximum geometrical limit of th GMA is given by the mass constraint, the loads and (thermo-)mechanical stress requirements mentioned in this document. The Ignition System´s main body (Ø70 mm) is designed with a vertically offset by 60 mm from the IH upper flange surface.  
+A damage- and collision-free motion under worst case angle conditions is required between the Igniter´s main body (incl. it´s attachments) and the GMA geometry. A minimum clearance of 20 mm is to be considered between moving parts. The maximum geometrical limit of th GMA is given by the mass constraint, the loads and (thermo-)mechanical stress requirements mentioned in this document. The Ignition System´s main body (Ø70 mm) is designed with a vertically offset by 60 mm from the Injection Head (IH) upper flange surface.  
 ________________________
 
 **REQ-015 - Geometrical interface**  
@@ -133,9 +133,9 @@ The GMA shall transmit a total nominal thrust load of 15 kN.
 <!-- Formulation rather generic for future flexibility and adaptation like. 15 kN under worst case gimbal angle conditions might overconstraint the GMA-->  
 ________________________
 
-**REQ-00x - (Quasi-)static thrust**  
+**REQ-00x - Quasi-Static Load (QSL)**  
 
-For single events, the GMA shall sustain an excessive load of 22.5 kN, which includes a safety factor of 1.5 applied to the nominal thrust.  
+For single events, the GMA shall sustain an excessive thrust load of 22.5 kN at gimbal angle of 0 °, which includes a safety factor of 1.5 applied to the nominal thrust.  
 ________________________
 
 **REQ-00x - Mechanical and thermal transient**  
