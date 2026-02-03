@@ -47,7 +47,7 @@ header-includes:
 
 # Introduction
 This document shows the preliminary verification method and plan of the Gimbal Mount Assembly (GMA) and reflects the
-status of the development associated to the requirement consolidation [RD1]. The main objective is to demonstrate that the product meets the specified requirements considering the resources, capabilities, costs and schedule of the The Exploration Company (TEC).
+status of the development associated to the requirement consolidation [RD1]. The main objective is to demonstrate that the product meets the specified requirements considering the resources, capabilities, costs and schedule of this project.
 
 ## Compliance Statuses  
 The following compliance statuses are used:
@@ -66,6 +66,8 @@ The following compliance statuses are used:
 
 [RD2] Space engineering - Verification - ECSS-E-ST-10-02C Rev.1 01.02.2018
 
+[RD3] Huracan - TCA Interface Control Document - TEC-FRA-DOC-202401143 - Version 1-draft
+
 \clearpage
 
 # Definitions
@@ -82,7 +84,7 @@ All notices, documents, deliverables and other communications between the main p
 employees and related Third Parties shall be in English.
 
 ## Verification Methods
-The verification methods utilized for the development of the GMA are closely associated to The Exploration Companies verification policy and ECSS-standard [RD2]: Review of Design, Analysis, Inspection and Test.
+The verification methods used for the development of the GMA are closely aligned with The Exploration Company’s (TEC) verification policy and the ECSS standard [RD2]: *Review of Design, Analysis, Inspection, and Test*. Verification shall be carried out using one or more of these methods.
 
 ### RoD: Review of Design  
 This is typically a review of the as-built drawings to confirm that a design feature has been incorporated into the
@@ -106,16 +108,191 @@ Test is a method of verification wherein requirements are verified by measuremen
 application of functional and environmental stimuli. These measurements may require the use of laboratory equipment, recorded data, procedures, test support items, or services. For all verification, qualification, and acceptance test activities, pass or fail test criteria or acceptance tolerance bands (based upon design and performance requirements)
 shall be specified before conducting the test. This will ensure that the actual performance of tested equipment or systems meets or exceeds specifications.
 
-# Gimbal Mount Assembly
+# Preliminary Verification Control Document  
 
+## Environmental requirements  
+
+**REQ-00X - Pollution requirements** 
+*Sensitive areas, such as regions of relative motion, shall be protected against sand particles with an average size of 0.2 mm at a temperature of 49.6 °C.*  
+
+Verification method(s):  
+- **I**: The absolute temperature of the sand heap located near the vehicle launch area shall be measured prior to launch using a calibrated digital temperature sensor (e.g., soil thermometer).
+
+Particle size distribution shall be assessed by measuring ten randomly selected sand particles using a caliper.
+
+The investigation shall be accompanied by appropriate documentation of ambient environmental conditions, including air temperature, relative humidity, atmospheric pressure, and wind speed.  
+________________________
+
+**REQ-00X - Ambient requirements**  
+*According to the system requirements of *Oneiros*, the sea level conditions are defined by an pressure of 0.994 bar to 1.0276 bar and 12 % to 91 % humidity. The ambient temperature ranges from 8.3 °C to 49.6 °C.*
+ 
+Verification method(s): 
+
+- **I / T**: The absolute ambient temperature is to be measured with simple instrumentation like a thermometer (RTDs) or thermistor. 
+
+The environmental pressure can be measured by a barometer (mechanical or electronic pressure sensor).
+
+A hygrometer measures relative humidity. Digital sensors (capacitive or resistive) are common.
+
+All values are to be referenced and documented w.r.t the local meteorological station´s measurements.  
+________________________
+
+## 2.2. Functional requirements  
+
+**REQ-003 - Operational gimbal capability**  
+
+*The GMA design provides a deflection capability of ±10° per axis (pitch and yaw), which covers the GNC needs as well as the mechanical limits of the subsystem and its components (e.g., bellows and actuators).*  
+
+Verification method(s): 
+
+- **A**: A kinematic analysis in CAD shall prove the gimbal capability on a component and system level of the entire engine, including ducts, actuators etc.
+
+- **I**: Prior to assembly of the GMA it´s deflection angles are to be measured. From the neutral position (gimbal angle 0 °), the deflection up to +/-10 ° is to be determined, e.g. by prior markings between surfaces that are subjected to relative motion.  
+________________________
+
+**REQ-00X - Max. gimbal capability**  
+
+*For off-nominal cases and emergency authority, the max. gimbal angle shall not exceed +/-12 °.*  
+
+Verification method(s):  
+
+see REQ-003 above  
+________________________
+
+**REQ-002 - Rotation axis**  
+
+*To provide full pitch and yaw control capability, a two-axis rotation mechanism shall be implemented. Both axes are positioned perpendicular to each other within the same horizontal plane.*  
+
+Verification method(s):  
+
+- **RoD**: The manufacutirng drawing shall contain dimensions and tolerances related to the horizontal plane of both axis and the perpendicularity. 
+
+- **A / RoD**: Analysis of tolerances based on manufacturing drawings and quality reports can be utilized for post-machined investigations of the axis´ perpendicularity. This needs to be executed with the GMA fully assembled in order to account for the bearings’ degrees of freedom, clearances, etc.
+
+- **I**: For inspection, the measurement of the perpendicularity of both axis can be done by reference planes with simple gauges like a precision square under ambient and unloaded conditions. This is to be realized for the entire angle range of the gimbal.  
+________________________  
+
+**REQ-004 - Angular velocity**  
+
+*To compromise GNC needs with mechanical constraints of the engine such as the actuator capacity, the max. angular velocity of the engine is 20 °/s.*  
+
+Verification method(s):  
+
+- **A**: A kinematic analysis is to be executed to determine the angular velocity based on the linear velocity of the actuators. 
+
+- **T**: The angular velocity can be computed by speed sensors measurements. A proper instrumentation is to be chosen to account for operational constraints (e.g. temperature, vibration).  
+________________________
+
+**REQ-005 - Angular acceleration**  
+
+*The engine´s acceleration and hence, the capability of the GMA shall be max. 25 rad/s².*  
+
+Verification method(s):  
+
+- **A**: A kinematic analysis is to be executed to determine the angular acceleration based on the linear acceleration of the actuators. 
+
+- **T**: The angular acceleration can be derived mathematically by signal processing from angular velocity measurements (see REQ-004). The computational feasibility and accuracy is to be validated seperately. 
+________________________
+
+**REQ-0014 - Mass**   
+
+*The maximum mass of the GMA shall be equal or below 5 kg with a measurement accuracy of +/-0.1 %.*  
+
+Verification method(s):  
+
+- **A**: Prior to release of manufacturing drawings, the mass is to be estimated in the CAD-environment. 
+
+- **I**: The mass of the entire GMA is to be measured with an available scale. Divergent measurement accuracies are to be documented. 
+________________________
+
+**REQ-00X - Geometrical envelope**  
+
+*A damage- and collision-free motion under worst case angle conditions is required between the Igniter´s main body (incl. it´s attachments) and the GMA geometry. A minimum clearance of 20 mm is to be considered between moving parts. The maximum geometrical limit of th GMA is given by the mass constraint, the loads and (thermo-)mechanical stress requirements mentioned in this document. The Ignition System´s main body (Ø70 mm) is designed with a vertically offset by 60 mm from the Injection Head (IH) upper flange surface.*  
+
+Verification method(s):  
+
+- **A**: A geometrical analysis in CAD shall prove contact- and collision-free motion with all parts involved (e.g. IH, Igniter body, connectors, sensors etc.).
+
+- **I**: Based on geometrical analysis, a motion investigation between at least IH, GMA and the Ignition System (IGNS) is to be undertaken. The minimum clearance measured by a ruler is to be documented and pictured.  
+________________________  
+
+**REQ-015 - Geometrical interface**  
+
+*For the lower attachment of the GMA, the usable surface of the IH features a ring with an inner diameter of Ø100 mm and an outer diameter of Ø170 mm. In total, eight through-holes (Ø9 mm each) are available, spaced at 45° intervals (symetrically along PCD), to fasten the GMA to the IH using eight M8 fasteners (minimum tensile ultimate strength per fastener: 800 MPa).*  
+
+Verification method(s):  
+
+- **RoD, I**: The interfaces constraints can be extracted from the Interface Control Document (ICD) [RD3] and executed inspections (if manufactured beforehand).  
+________________________  
+
+## 2.3. Mechanical and thermal requirements  
+
+**REQ-018 - Friction coefficient**  
+
+*To reduce the breaking torque of the actuators, the GMA shall provide a constant friction coefficient equal or lower than 0.1 under mechanical and thermal operating conditions.*  
+
+Verification method(s):  
+________________________  
+
+**REQ-008 - Plastic Deformation and crack formation**  
+
+*The GMA and its parts shall not undergo plastic deformation, crack formation or other non-recoverable deformation when subjected to the operational conditions defined in this specification. Exceptions can be permissible if non-recoverable deformation is identified as a single, local phenomena, that occurs in extraordinary or single event load case. In this case the non-recoverable deformation is to be justified by analysis at least.*  
+
+Verification method(s):  
+
+
+________________________
+
+**REQ-001 - Operating nominal thrust**  
+
+*The GMA shall transmit a total nominal thrust load of 15 kN.*
+
+Verification method(s):  
+
+________________________
+
+**REQ-00x - Quasi-Static Load (QSL)**  
+
+*For single events, the GMA shall sustain an excessive thrust load of 22.5 kN at gimbal angle of 0 °, which includes a safety factor of 1.5 applied to the nominal thrust.*  
+
+Verification method(s):  
+________________________
+
+**REQ-00x - Mechanical and thermal transient**  
+
+*Until steady state conditions are achieved, transient conditions dominate. A cooling from ambient 280 K to 180 K within 10 s is to be considered linearly, with a slope of 10 K/s. This is to be taken into account at the GMA surface, that is connected to the IH upper flange. A chamber overpressure of 210 bar/s is to be anticipated for a transinent occasion.*  
+
+Verification method(s):  
+  
+________________________
+
+**REQ-020 - Operating temperature**  
+
+*An operating temperature of 120 K to 150 K shall be considered at the IH top flange surface that is connected to the GMA support.*  
+
+Verification method(s):  
+
+________________________  
+
+
+**REQ-030 - Cycling**  
+
+*The GMA shall sustain a minimum of 1000 cycles, which is derived from preliminary GNC-data.*  
+
+Verification method(s):  
+
+________________________
+
+
+\clearpage
 
 # Acronym List  
 The acronyms used in this document are listed below.  
 
 | **Acronym**  | **Definition**   |
 |---|---|
-|IH|Injection Head flange|
+|ICD|Interface Control Document|
+|IGNS|Ignition System|
+|IH|Injection Head|
 |GMA|Gimbal Mount Assembly|
-|PCD|Pitch Circle diameter|
-|QSL|Quasi-static load|
 |TEC|The Exploration Company|

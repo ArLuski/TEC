@@ -155,7 +155,7 @@ ________________________
 **REQ-030 - Cycling**  
 
 The GMA shall sustain a minimum of 1000 cycles, which is derived from preliminary GNC-data.  
-________________________
+________________________  
 
 
 ## 2.4. Growth potential requirements
