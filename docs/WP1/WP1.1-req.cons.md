@@ -160,7 +160,7 @@ ________________________
 
 ## 2.4. Growth potential requirements
 
-**REQ-00x - Extended cycling **  
+**REQ-00x - Extended cycling**  
 
 For further utilization of the GMA for flight qualification and preperation for the moon mission, 26520 cycles are targeted.  
 ________________________  

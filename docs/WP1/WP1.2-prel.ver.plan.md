@@ -156,7 +156,7 @@ ________________________
 
 Verification method(s):  
 
-see REQ-003 above  
+see REQ-003 - Operational gimbal capability 
 ________________________
 
 **REQ-002 - Rotation axis**  
@@ -222,7 +222,7 @@ ________________________
 
 Verification method(s):  
 
-- **RoD, I**: The interfaces constraints can be extracted from the Interface Control Document (ICD) [RD3] and executed inspections (if manufactured beforehand).  
+- **RoD, I**: The interface constraints can be extracted from the Interface Control Document (ICD) [RD3] and executed inspections (if already conducted). Same needs to be done w.r.t. to the upper flange interface that connects the GMA with the thrust frame.   
 ________________________  
 
 ## 2.3. Mechanical and thermal requirements  
@@ -231,7 +231,12 @@ ________________________
 
 *To reduce the breaking torque of the actuators, the GMA shall provide a constant friction coefficient equal or lower than 0.1 under mechanical and thermal operating conditions.*  
 
-Verification method(s):  
+Verification method(s): 
+
+- **I**: Features of the GMA that allow relative motion (e.g. bearings) shall be subjected to breakaway tests or similar to prove a friction coefficient equal or below 0.1 in a at least loaded condition and the prevailing ambient temperature (e.g. 20 °C). If cryogenic temperatures can´t be simulated, the fitting configuration of the inner- and outer ring of the bearing is to be adjusted as if cryogenic temperature is present. 
+
+- **T**: Extended tests in terms of mechanical load, cryogenic temperature and duration shall prove that the friction coefficient is constantly kept below the required value and friction phenomena like stick-slip-effects are controlled. 
+  
 ________________________  
 
 **REQ-008 - Plastic Deformation and crack formation**  
@@ -240,6 +245,9 @@ ________________________
 
 Verification method(s):  
 
+- **A**: A linear-elastic mechanical analysis is to be conducted, to identify potential plastic deformation. Additonal justificaiton methods like fraction mecchanical, Low-Cycle Fatigue analysis (LCF) etc. may be conducted complementary. 
+
+- **T**: Cryogenic rated strain gauges are to be introduced at critical areas to prove plastic deformation or crack propagation under operational testing conditions.
 
 ________________________
 
@@ -247,7 +255,9 @@ ________________________
 
 *The GMA shall transmit a total nominal thrust load of 15 kN.*
 
-Verification method(s):  
+Verification method(s): 
+
+- **T**: Common instrumentation like load cells or strain gauges are to be introduced to measure the thrust force of the engine. A less accurate prediction through the actuation force of the TVC-actuators (Thrust Vector Control) can be utilized as long as additional sources of torque and forces are validated (bellows stiffness, gimbal friction etc.). 
 
 ________________________
 
@@ -256,6 +266,8 @@ ________________________
 *For single events, the GMA shall sustain an excessive thrust load of 22.5 kN at gimbal angle of 0 °, which includes a safety factor of 1.5 applied to the nominal thrust.*  
 
 Verification method(s):  
+
+see REQ-001 - Operating nominal thrust
 ________________________
 
 **REQ-00x - Mechanical and thermal transient**  
@@ -263,7 +275,11 @@ ________________________
 *Until steady state conditions are achieved, transient conditions dominate. A cooling from ambient 280 K to 180 K within 10 s is to be considered linearly, with a slope of 10 K/s. This is to be taken into account at the GMA surface, that is connected to the IH upper flange. A chamber overpressure of 210 bar/s is to be anticipated for a transinent occasion.*  
 
 Verification method(s):  
-  
+
+- **A**: The pressure ramp-ups and temperature data serve as input data to conduct (thermo-)mechanical analysis for validation.  
+
+- **T**: As long as the GMA is assembled and prepared for testing, local strain gauges and thermocouples at the GMA may give evidence of transient characteristic  
+
 ________________________
 
 **REQ-020 - Operating temperature**  
@@ -271,6 +287,8 @@ ________________________
 *An operating temperature of 120 K to 150 K shall be considered at the IH top flange surface that is connected to the GMA support.*  
 
 Verification method(s):  
+
+see REQ-00x - Mechanical and thermal transient
 
 ________________________  
 
@@ -281,8 +299,46 @@ ________________________
 
 Verification method(s):  
 
-________________________
+- **A**: LCF analysis is to be performed to justify that the expected lifetime can be sustained by the GMA design.
 
+- **T**: Servo-hydraulic driven test rigs with cooling options shall enable strain-controlled fatigue tests. The test rig is to be sized for max. expected cycles beyond the expectation mentioned in this requirement.
+
+________________________  
+
+## 2.4. Growth potential requirements  
+
+**REQ-00x - Extended cycling**    
+
+*For further utilization of the GMA for flight qualification and preperation for the moon mission, 26520 cycles are targeted.*  
+
+Verification method(s):  
+
+see REQ-030 - Cycling  
+
+________________________    
+
+**REQ-00x - Lateral misalignment**    
+
+*The GMA shall contain features to compensate lateral misalignment of the thrust vector up to +/-10 mm [RD4].*   
+
+Verification method(s): 
+
+- **RoD**: Design attributes are to be introduced in the GMA to correct thrust misalignment, which shall be part of acknowledged design documents (definition/justification files, manufacturing drawings etc.)  
+
+- **A**: Thrust misalnignment can be computed prior testing. Worst-case considerations based on manufacturing drawings and quality reports of already manufactured components provide a first reference for a possible thrust vector offset. 
+
+- **T**: Thrust misalignment shall be executed in a loop of hotfire testing accompanied by load cells or strain gauge measurements and adapted position of the GMA until the offset of the thrust vector is at its minimium
+
+
+________________________  
+
+**REQ-00x - Vacuum environment**  
+
+*The GMA performance in ambient conditions shall be adapted to operate feasibly in vacuum, especially concerning lubrication, thermal and mechanical loads.* 
+
+Verification method(s):  
+
+TBD
 
 \clearpage
 
@@ -291,8 +347,10 @@ The acronyms used in this document are listed below.
 
 | **Acronym**  | **Definition**   |
 |---|---|
+|GMA|Gimbal Mount Assembly|
 |ICD|Interface Control Document|
 |IGNS|Ignition System|
 |IH|Injection Head|
-|GMA|Gimbal Mount Assembly|
+|LCF|Low-Cycle Fatigue|
 |TEC|The Exploration Company|
+|TVC|Thrust Vector Control|
