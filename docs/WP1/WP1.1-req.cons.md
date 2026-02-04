@@ -72,13 +72,13 @@ ________________________
 
 **REQ-00X - Ambient requirements**  
 
-According to the system requirements of *Oneiros*, the sea level conditions are defined by an pressure of 0.994 bar to 1.0276 bar and 12 % to 91 % humidity. The ambient temperature ranges from 8.3 °C to 49.6 °C. [RD3]  
+According to the system requirements of *Oneiros*, the sea level conditions are defined by a pressure of 0.994 bar to 1.0276 bar and 12 % to 91 % humidity. The ambient temperature ranges from 8.3 °C to 49.6 °C. [RD3]  
 
 ## 2.2. Functional requirements
 
 **REQ-003 - Operational gimbal capability** 
 
-The GMA design provides a deflection capability of ±10° per axis (pitch and yaw), which covers the GNC needs as well as the mechanical limits of the subsystem and its components (e.g., bellows and actuators).  
+The GMA design provides an operational deflection capability of ±10° per axis (pitch and yaw), which covers the GNC needs as well as the mechanical limits of the subsystem and its components (e.g., bellows and actuators).  
 ________________________
 
 **REQ-00X - Max. gimbal capability**  
@@ -108,12 +108,12 @@ ________________________
 
 **REQ-00X - Geometrical envelope**  
 
-A damage- and collision-free motion under worst case angle conditions is required between the Igniter´s main body (incl. it´s attachments) and the GMA geometry. A minimum clearance of 20 mm is to be considered between moving parts. The maximum geometrical limit of th GMA is given by the mass constraint, the loads and (thermo-)mechanical stress requirements mentioned in this document. The Ignition System´s main body (Ø70 mm) is designed with a vertically offset by 60 mm from the Injection Head (IH) upper flange surface.  
+A damage- and collision-free motion under worst case angle conditions is required between the Igniter´s main body (incl. it´s attachments) and the GMA geometry. A minimum clearance of 20 mm is to be considered between moving parts. The maximum geometrical limit of th GMA is given by the mass constraint, the loads and (thermo-)mechanical stress requirements mentioned in this document. The Ignition System´s main body (Ø70 mm) is designed with a vertically offset of 60 mm from the Injection Head (IH) upper flange surface.  
 ________________________
 
 **REQ-015 - Geometrical interface**  
 
-For the lower attachment of the GMA, the usable surface of the IH features a ring with an inner diameter of Ø100 mm and an outer diameter of Ø170 mm. In total, eight through-holes (Ø9 mm each) are available, spaced at 45° intervals (symetrically along PCD), to fasten the GMA to the IH using eight M8 fasteners (minimum tensile ultimate strength per fastener: 800 MPa).  
+For the lower attachment of the GMA, the utilizable surface of the IH features a ring with an inner diameter of Ø100 mm and an outer diameter of Ø170 mm. In total, eight through-holes (Ø9 mm each) are available, spaced at 45° intervals (symetrically along PCD). Eight M8 fasteners are intended to fix the GMA with the IH (minimum tensile ultimate strength per fastener: 800 MPa).*  
 
 ## 2.3. Mechanical and thermal requirements  
 
@@ -140,7 +140,7 @@ ________________________
 
 **REQ-00x - Mechanical and thermal transient**  
 
-Until steady state conditions are achieved, transient conditions dominate. A cooling from ambient 280 K to 180 K within 10 s is to be considered linearly, with a slope of 10 K/s. This is to be taken into account at the GMA surface, that is connected to the IH upper flange. A chamber overpressure of 210 bar/s is to be anticipated for a transinent occasion.
+Until steady state conditions are achieved, transient conditions dominate. A cooling from ambient 280 K to 180 K within 10 s is to be considered linearly, with a slope of 10 K/s. This is to be taken into account at the GMA surface, that is connected to the IH upper flange. A chamber overpressure rate of 210 bar/s is to be anticipated for a transinent occasion.
 <!--280K (ambient) was measured at DLR. For Oneiros it might be higher as almost 50°C can be targeted for ambient tests at UAE. Also,
 the lower temperature of 180K might be incerased under these ambient conditions. TBD! -->    
 ________________________
