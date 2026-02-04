@@ -113,7 +113,7 @@ ________________________
 
 **REQ-015 - Geometrical interface**  
 
-For the lower attachment of the GMA, the utilizable surface of the IH features a ring with an inner diameter of Ø100 mm and an outer diameter of Ø170 mm. In total, eight through-holes (Ø9 mm each) are available, spaced at 45° intervals (symetrically along PCD). Eight M8 fasteners are intended to fix the GMA with the IH (minimum tensile ultimate strength per fastener: 800 MPa).*  
+For the lower attachment of the GMA, the utilizable surface of the IH features a ring with an inner diameter of Ø100 mm and an outer diameter of Ø170 mm. In total, eight through-holes (Ø9 mm each) are available, spaced at 45° intervals (symetrically along PCD). Eight M8 fasteners are intended to fix the GMA with the IH (minimum tensile ultimate strength per fastener: 800 MPa). 
 
 ## 2.3. Mechanical and thermal requirements  
 
