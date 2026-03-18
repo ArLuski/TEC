@@ -66,6 +66,8 @@ This document presents the Gimbal Mount Assembly (GMA) Trade-Off Report. The obj
 
 [RD8] A.Lukanowski - 20260309_Luka_GMA_Tradeoff_Decision Matrix.xlsx / Excel file - Luebeck 2026
 
+[RD9] M. Gant - System Requirements Document - TEC-ITA-DOC-2025-01017 / Version 0
+
 \clearpage
 
 # 2. Trade-Off 
@@ -198,9 +200,13 @@ However, it should be noted that these geometric constraints are dependent on th
 
 Consequently, while the ring-type configuration presently emerges as the most suitable option according to the weighted trade-off analysis, the cross-type concept remains a viable alternative, especially if future design iterations modify the geometric boundary conditions. The results of this trade-off should therefore be interpreted as a recommendation under the current design assumptions, rather than as a final or irreversible selection.
 
+# 3. Conclusion and way forward
+
+This trade study is executed under current restriction of the project, which dictate the weights and hence the priority of the GMA design. Under these circumstances, the favored design option of the ring-type GMA is valid for the constraints mainly associated to the *Oneiros* project [RD9]. For the mission *Hilal*, the requirements are expected to be different in terms of technical and programmatic aspects. A seperated trade-off report is recommended in this case as the design choice may be in favor of an alternative option.
+
 \clearpage
 
-# 3. Acronym List  
+# 4. Acronym List  
 The acronyms used in this document are listed below.  
 
 | **Acronym**  | **Definition**   |
