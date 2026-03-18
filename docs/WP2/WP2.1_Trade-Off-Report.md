@@ -66,7 +66,7 @@ This document presents the Gimbal Mount Assembly (GMA) Trade-Off Report. The obj
 
 [RD8] A.Lukanowski - 20260309_Luka_GMA_Tradeoff_Decision Matrix.xlsx / Excel file - Luebeck 2026
 
-[RD9] M. Gant - System Requirements Document - TEC-ITA-DOC-2025-01017 / Version 0
+[RD9] P. Muraro - System Requirements Document - TEC-ITA-DOC-2025-01017 / Version 0
 
 \clearpage
 
