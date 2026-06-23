@@ -51,11 +51,20 @@ This document presents the Gimbal Mount Assembly (GMA) Trade-Off Report. The obj
 ##  1.2. Reference
 [RD1] A.Lukanowski - Gimbal Mount Assembly - Requirement Consolidation / Version 0 - Luebeck 2026
 
+[RD2] BEARINGS, CONTROL SYSTEM COMPONENTS, AND ASSOCIATED
+HARDWARE USED IN THE DESIGN AND CONSTRUCTION OF
+AEROSPACE MECHANICAL SYSTEMS AND SUBSYSTEMS / MIL-STD-1599 
 
 
 \clearpage
 
-# 2. blabla
+# 2. Tolerances and fits
+**JUSTIFICATION**
+**=>LUG-BEARING: Recommendation by [RD2] and supplier recommendations for rod ends**
+**=>Bearing-Bolt dimensions given**
+**=>BUSHING-CLEVIS chosen to be clearance fit to ensure precise axial positioning of BEARING innter race**
+**SPACER/BUSHING-BOLT clearance fit for flexibiltiy in terms of integration**
+
 
 ## 2.1. blabla
 
