@@ -1,49 +1,50 @@
 ---
-title: |  
-  **Gimbal Mount Assembly**  
+title: |
+  **Gimbal Mount Assembly**
   Preliminary Verification Control Document
-author: Artjom Lukanowski on behalf of The Exploration Company SAS     
+author: Artjom Lukanowski on behalf of The Exploration Company SAS
 version: "001"
 date: "Version 001 created on \\today"
+
 output:
   pdf_document:
-    toc: true
-    toc_depth: 3
+    toc: false
+    keep_tex: true
 
 header-includes:
   - \usepackage{titling}
-  - \renewcommand{\maketitle}{
-      \begin{titlepage}
-        \thispagestyle{empty}
-        \vspace*{\fill}
-        \begin{center}
-          {\huge\normalfont \thetitle\par}
-          \vspace{2em}
-          {\normalsize\normalfont \theauthor\par}
-          \vspace{1em}
-          {\normalsize\normalfont \thedate\par}
-        \end{center}
-        \vspace*{\fill}
-      \end{titlepage}
-    }
+  - |
+      \renewcommand{\maketitle}{
+        \begin{titlepage}
+          \thispagestyle{empty}
+          \vspace*{\fill}
+          \begin{center}
+            {\huge\normalfont \thetitle\par}
+            \vspace{2em}
+            {\normalsize\normalfont \theauthor\par}
+            \vspace{1em}
+            {\normalsize\normalfont \thedate\par}
+          \end{center}
+          \vspace*{\fill}
+        \end{titlepage}
+      }
   - \usepackage[a4paper,left=20mm,right=20mm,top=25mm,bottom=25mm]{geometry}
   - \usepackage{fancyhdr}
-  - \fancyhead[L]{\nouppercase{\leftmark}}
   - \pagestyle{fancy}
   - \fancyhf{}
   - \fancyhead[R]{Gimbal Mount Assembly - Requirement Consolidation - Version 001}
-  - \renewcommand{\headrulewidth}{0.4pt}
   - \fancyfoot[C]{\thepage}
-  - \usepackage{hyperref}
-  - 
+  - \renewcommand{\headrulewidth}{0.4pt}
 ---
-<!--An extension to these requierements are given in a Excel named "Huracan-TVC-Preliminary-Spec.xlsx" created by Pierre Vinet -->
 
 \pagenumbering{roman}
 \setcounter{page}{1}
+
 \tableofcontents
+
 \clearpage
 \pagenumbering{arabic}
+\setcounter{page}{1}
 
 # 1. Introduction
 This document shows the preliminary verification method and plan of the Gimbal Mount Assembly (GMA) and reflects the
