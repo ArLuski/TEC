@@ -74,7 +74,7 @@ For the on-Earth demonstrator *Oneiros*, which shall be driven by the Huracan en
 
 This Definition File and all associated documents focus exclusively on the development of the GMA.
 
-In the figure below, the GMA and its position within the engine layout are shown. The GMA is attached to a Thrust Dome, which interfaces with the Injection Head (IH). The upper end of the GMA is connected to the Thrust Frame Beams, which are individually connected to the GMA in a 90°-clocked configuration.
+The figure below shows the GMA and its position within the engine layout. The GMA is attached to a Thrust Dome, which interfaces with the Injection Head (IH). The upper end of the GMA is connected to the Thrust Frame Beams, which are individually attached to the GMA in a 90°-clocked configuration.
 
 ![GMA in engine system](<../figures/GMA_engine context.png>){ width=55% }
 
@@ -99,45 +99,45 @@ Machined parts manufactured in accordance with military and aerospace standards 
 
 ![COTS parts in the GMA](<../figures/GMA explosion cots.png>){width=40%}  
 
-## 3.2. Part breakdown, materials and mass
+## 3.2. Part Breakdown, Materials and Mass
 
 The image and the subsequent table illustrate the parts and their designated materials in isometric and cross-sectional views.
 
-The GMA forms a double-shear clevis joint in which the GMA Lug Head supports the staked outer race of a self-lubricating plain bearing. The bearing inner race is centered within the GMA Clevis Head by a spacer and clamped against the bushing by the preload of the NAS bolt. A castellated nut contacts the outer surface of the GMA Clevis Head, while a cotter pin prevents the nut from loosening and maintains the axial position of the stacked components.
+The GMA forms a double-shear clevis joint in which the GMA Lug Head supports the staked outer race of a self-lubricating Plain Bearing. The Bearing inner race is centered within the GMA Clevis Head by a Spacer and clamped against the Bushing by the preload of the NAS-bolt. A castellated nut contacts the outer surface of the GMA Clevis Head, while a Cotter Pin prevents the nut from loosening and maintains the axial position of the stacked components.
 
-The two Clevis Ears interface with the NAS bolt on one side and the GMA Bushing on the other. Their bores have different diameters and clearance fits to ensure controlled seating and clamping of the axially stacked components while maintaining the centered position of the GMA Lug Head between the Clevis Ears. Further details are provided in Section 3.3.
+The two Clevis Ears interface with the NAS-bolt on one side and the GMA Bushing on the other. Their bores have different diameters and clearance fits to ensure controlled seating and clamping of the axially stacked components while maintaining the centered position of the GMA Lug Head between the Clevis Ears.  
 
-The “U” suffix in the NAS bolt designation identifies the available passivated finish. This finish is driven by market availability and is not functionally required by the assembly.  
+The “U” suffix in the NAS-bolt designation identifies the available passivated finish. This finish is driven by market availability and is not functionally required by the assembly.  
 
- ![GMA isometric view and cross section](<../figures/GMA_isometric_cross section.png>){ width=80% }  
+ ![GMA isometric view and cross section](<../figures/GMA_isometric_cross section.png>){ width=90% }  
 
 | **Number** | **CAD-ID** | **Designation** | **Material** | **Mass (kg)** |
 |---|---|---|---|
-| 1 | 126749/01 |GMA CLEVIS HEAD              |17-4PH - H900    |0.864  |
-| 2 | 3489/01   |COTTER PIN MS24665-374       |AISI 302 or 304  |0.0022 |
-| 3 | 126711/01 |GMA BUSHING                  |17-4PH - H900    |0.0147 |
-| 4 | 3423/01   |BOLT NAS6710DU29             |A286             |0.1316 |
-| 5 | 3437/01   |NUT MS9358-16                |A286             |0.0386 |
-| 6 | 126707/01 |GMA SPACER                   |17-4PH - H900    |0.0003 |
-| 7 | 19156/01   |BEARING MS14103-10          |330C / 17-4PH    |0.1089 |
-| 8 | 124890/01 |GMA LUG HEAD                 |17-4PH - H900    |0.381  |
+| 1 | 126749/01 |GMA Clevis Head              |17-4PH - H900    |0.864  |
+| 2 | 3489/01   |Cotter Pin MS24665-374       |AISI 302 or 304  |0.0022 |
+| 3 | 126711/01 |GMA Bushing                  |17-4PH - H900    |0.0147 |
+| 4 | 3423/01   |Bolt NAS6710DU29             |A286             |0.1316 |
+| 5 | 3437/01   |Nut MS9358-16                |A286             |0.0386 |
+| 6 | 126707/01 |GMA Spacer                   |17-4PH - H900    |0.0003 |
+| 7 | 19156/01  |Bearing MS14103-10           |330C / 17-4PH    |0.1089 |
+| 8 | 124890/01 |GMA Lug Head                 |17-4PH - H900    |0.381  |
 | **Total mass** |  | |  | **1.544** |
 : Total mass of main parts  
 
-Taking into account the additional bolts, washers, nuts, and pins, an additional CAD mass of 0.212 kg must be considered. The total mass is therefore approximately **1.8 kg**, which is **64 %** lower than the maximum mass specified in requirement [RD2]. Further details of the interface connections are provided in the GMA Interface Control Document (ICD) [RD4].
+Taking into account the additional bolts, washers, nuts, and pins, an additional CAD mass of 0.212 kg must be considered. The total mass is therefore approximately **1.8 kg**, which is **64 %** lower than the maximum mass specified in requirement [RD2]. Further details of the interface connections are provided in the GMA Interface Control Document (ICD) in [RD4].
 
-## 3.3. Tolerances and fits
+## 3.3. Tolerances and Fits
 
 The selection of dimensional fits between mating cylindrical surfaces is governed by the fixed dimensions of the COTS parts used in the design. It also considers the fit recommendations specified by the applicable standards for the bearing and the GMA Lug Head, as well as the functional requirements of the assembly and the flexibility required during Manufacturing, Assembly, Integration, and Testing (MAIT). 
 
 | **Parts** | **Shaft (mm)** | **Hole (mm)** | **Resulting Fit (mm)** |
 |---|---|---|---| 
-| BEARING & LUG     |30.1498–30.1625 |30.1570–30.1700 |**-0.0055 to +0.0202**|
-| BOLT & BEARING    |15.8369–15.8496 |15.8623–15.8750 |**+0.0127 to +0.0381**|
-| BOLT & CLEVIS     |15.8369–15.8496 |15.8623–15.8750 |**+0.0127 to +0.0381**|
-| BOLT & BUSHING    |15.8369–15.8496 |15.8623–15.8750 |**+0.0127 to +0.0381**|
-| BOLT & SPACER     |15.8369–15.8496 |15.8623–15.8750 |**+0.0127 to +0.0381**|
-| BUSHING & CLEVIS  |19.9800–19.9930 |20.0000–20.0210 |**+0.0070 to +0.0410**|
+| Bearing & Lug     |30.1498–30.1625 |30.1570–30.1700 |**-0.0055 to +0.0202**|
+| Bolt & Bearing    |15.8369–15.8496 |15.8623–15.8750 |**+0.0127 to +0.0381**|
+| Bolt & Clevis     |15.8369–15.8496 |15.8623–15.8750 |**+0.0127 to +0.0381**|
+| Bolt & Bushing    |15.8369–15.8496 |15.8623–15.8750 |**+0.0127 to +0.0381**|
+| Bolt & Spacer     |15.8369–15.8496 |15.8623–15.8750 |**+0.0127 to +0.0381**|
+| Bushing & Clevis  |19.9800–19.9930 |20.0000–20.0210 |**+0.0070 to +0.0410**|
 : Tolerances and fits  
 
 # 4. Functional and mechanical characteristics 
@@ -148,12 +148,12 @@ An overview of the functions of the main GMA parts is provided in the table belo
 | **Number** | **Designation** | **Function** |
 |---|---|---| 
 | 1 | GMA Clevis Head | Transfers loads into the thrust frame structure; provides centering and positioning of the lug interface; supports engine handling and positioning of instrumentation interfaces
-| 2 | COTTER PIN MS24665-374| Provides positive locking of the nut and prevents unintended loosening
-| 3 | GMA Bushing | Provides axial positioning of the lug/bearing interface and supports axial load transfer between adjacent components
-| 4 | BOLT NAS6710DU29| Transfers shear and bending loads through the clevis/lug joint; provides axial and radial positioning of the connected parts
-| 5 | CASTELLATED NUT MS9358-16| Retains the bolt in the clevis/lug joint and maintains joint assembly integrity
+| 2 | Cotter Pin MS24665-374| Provides positive locking of the nut and prevents unintended loosening
+| 3 | GMA Bushing | Provides axial positioning of the lug/bearing interface and supports axial/radial load transfer between adjacent components
+| 4 | Bolt NAS6710DU29| Transfers shear and bending loads through the clevis/lug joint; provides axial and radial positioning of the connected parts
+| 5 | Castellated Nut MS9358-16| Retains the bolt in the clevis/lug joint and maintains joint assembly integrity
 | 6 | GMA Spacer | Provides centered positioning of the lug/bearing assembly and maintains the required axial spacing
-| 7 | BEARING MS14103-10 | Supports radial and axial loads while allowing angular displacement in pitch and yaw
+| 7 | Bearing MS14103-10 | Supports radial and axial loads while allowing angular displacement in pitch and yaw
 | 8 | GMA Lug Head | Transfers loads between the bearing and engine interface; provides bearing support and mechanical stop functionality
 : GMA Parts and Functions
 
@@ -173,7 +173,7 @@ The GMA Clevis Head features a raised **Clevis Extension** beneath the castellat
 
 A total of four **Anti-Roll Features** are incorporated into the design of the GMA Lug Head. Their purpose is to minimize relative rotation of the engine about the roll axis (z-axis, Figure 2) under all gimbal-angle conditions. Therefore, the clearance between these features and the nearest surface of the clevis is kept as small as possible.   
 
-The GMA design uses two different **Clevis Bore Holes**. The smaller bore is in direct contact with the NAS-bolt, whereas the larger bore provides a clearance fit around the GMA bushing. This clearance allows the axially clamped components to seat against one another in a controlled manner during bolt tightening.  
+The GMA design uses two different **Clevis Bore Holes**. The smaller bore is in direct contact with the NAS-bolt, whereas the larger bore provides a clearance fit around the GMA Bushing. This clearance allows the axially clamped components to seat against one another in a controlled manner during bolt tightening.  
 
 # 5. Design Recommendations for Adjacent Parts 
 As mentioned in the previous chapters, the GMA development does not include the interfacing parts on the engine side and the vehicle side. Nevertheless, since these parts have not yet been finalized and directly interface with the GMA, it is useful to present design suggestions from the perspective of the GMA development.
@@ -184,7 +184,7 @@ The GMA Clevis Head is designed to allow four separate structural members to be 
 ![Thrust Frame Beam dimensions](<../figures/Thrust Beam.png>){width=45%}  
 
 **Thrust Dome**  
-The main function of the Thrust Dome is to provide space to accommodate the IGS and its peripheral attachments, while also transmitting the total thrust and thermal loads from the IH to the GMA. It is designed as an axially symmetric body with radial cut-outs to provide space and accessibility for the IGS. The proposed material is 17-4PH H900.
+The main function of the Thrust Dome is to provide space to accommodate the IGS and its peripheral attachments, while also transmitting the total thrust and thermal loads from the IH to the GMA. It is designed as an axially symmetric body with radial cut-outs to provide space and accessibility for the IGS. The proposed material is 17-4PH - H900.
 
 The main suggested dimensions are shown below. The centering feature is designed as a longitudinal groove in a configuration clocked at 90° intervals. The function of this groove is to precisely position the Thrust Dome on the IH with respect to the lateral axis and to define its clocking, while accounting for the thermal contraction of the mating male features, such as pins on the IH.
 
@@ -196,14 +196,14 @@ For the preliminary cost assessment, the custom-made parts were quoted through m
 
 | **Part**| **CAD-ID** | **Material** | **Cost (€/unit)** |
 | ------ | ----- | ------- |------- |
-| GMA CLEVIS HEAD             |126749/01  |17-4PH - H900    |532|
-| GMA LUG HEAD                |124890/01  |17-4PH - H900    |241|
-| GMA BUSHING                 |126711/01  |17-4PH - H900    |35|
-| GMA SPACER                  |126707/01  |17-4PH - H900    |30|
-| BEARING MS14103-10          |19156/01  |330C/17-4PH       |50|
-| BOLT NAS6710DU29            |3423/01    |A286             |50|
-| CASTELLATED NUT MS9358-16   |3437/01    |A286             |88|
-| COTTER PIN MS24665-374      |3489/01    |AISI 302 or 304  |9|
+| GMA Clevis Head             |126749/01  |17-4PH - H900    |532|
+| GMA Lug Head                |124890/01  |17-4PH - H900    |241|
+| GMA Bushing                 |126711/01  |17-4PH - H900    |35|
+| GMA Spacer                  |126707/01  |17-4PH - H900    |30|
+| Bearing MS14103-10          |19156/01  |330C/17-4PH       |50|
+| Bolt NAS6710DU29            |3423/01    |A286             |50|
+| Castellated Nut MS9358-16   |3437/01    |A286             |88|
+| Cotter Pin MS24665-374      |3489/01    |AISI 302 or 304  |9|
 | **Total cost**              |           |                 |**1035**|
 : Cost assessment  
 
@@ -221,6 +221,7 @@ The acronyms used in this document are listed below.
 |ICD  |Interface Control Document|
 |IGS  |Ignition System|
 |IH   |Injection Head|
+|MAIT |Manufacturing, Assembly, Integration, and Testing|
 |PDR  |Preliminary Design Review 
 |RCS  |Reaction Control System|
 |TCA  |Thrust Chamber Assembly|
