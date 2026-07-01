@@ -4,7 +4,7 @@ title: |
   Definition File
 author: Artjom Lukanowski on behalf of The Exploration Company SAS     
 version: "001"
-date: "Version 001 created on \\today"
+date: "Version 000 created on \\today"
 output:
   pdf_document:
     toc: true
@@ -55,19 +55,19 @@ The Definition File serves as the identity card of the Gimbal Mount Assembly (GM
 
 [RD1] Nyx Moon - Huracan Development Logic / TEC-FRA-DOC-01004 / Issue 02 
 
-[RD2] Gimbal Mount Assembly - Requirement Consolidation / Version 0 
+[RD2] Gimbal Mount Assembly - Requirement Consolidation / Version 001 
 
-[RD3] Gimbal Mount Assembly - Trade-Off Report / Version 0 
+[RD3] Gimbal Mount Assembly - Trade-Off Report / Version 001 
 
-[RD4] Gimbal Mount Assembly - Interface Control Document / Version 0 
+[RD4] Gimbal Mount Assembly - Interface Control Document / Version 001 
 
-[RD5] Gimbal Mount Assembly - Justification File / Version 0 
+[RD5] Gimbal Mount Assembly - Justification File / Version 001 
 
 
 \clearpage
 
 # 2. GMA Overview
-## 2.1. Engine system context  
+## 2.1. Engine System Context  
 The development logic of the Huracan engine system, as presented during the Preliminary Design Review (PDR), features a rigid thrust structure that interfaces the main engine with the vehicle [RD1]. Based on this logic, GNC maneuvers were originally intended to be performed by a Reaction Control System (RCS).
 
 For the on-Earth demonstrator *Oneiros*, which shall be driven by the Huracan engine, pitch and yaw control is planned to be realized by a Thrust Vector Control (TVC) system. The TVC system steers the vehicle by physically pivoting, or gimballing, the main engine in order to vector the thrust. Therefore, the main mechanical components of the TVC system are the GMA and two actuators. 
@@ -124,7 +124,7 @@ The “U” suffix in the NAS-bolt designation identifies the available passivat
 | **Total mass** |  | |  | **1.544** |
 : Total mass of main parts  
 
-Taking into account the additional bolts, washers, nuts, and pins, an additional CAD mass of 0.212 kg must be considered. The total mass is therefore approximately **1.8 kg**, which is **64 %** lower than the maximum mass specified in requirement [RD2]. Further details of the interface connections are provided in the GMA Interface Control Document (ICD) in [RD4].
+Taking into account the additional bolts, washers, nuts, and pins, an additional CAD mass of 0.2 kg must be considered. The total mass is therefore approximately **1.7 kg**, which is **64 %** lower than the maximum mass specified in requirement [RD2]. Further details of the interface connections are provided in the GMA Interface Control Document (ICD) in [RD4].  
 
 ## 3.3. Tolerances and Fits
 
