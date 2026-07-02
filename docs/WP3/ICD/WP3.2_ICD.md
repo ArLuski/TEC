@@ -100,7 +100,7 @@ The GMA interfaces with the vehicle structure through four Thrust Frame Beams, a
 
 ![Interfaces between GMA and Thrust Frame Beams](<../figures/ICD_GMA Vehicle.png>){ width=70% }   
 
-Table 3 show the total number of bolts, nuts, and washers required for the four thrust frame beams.
+Table 3 show the total number of bolts, nuts, and washers required for the four Thrust Frame Beams.
 
 | **Interface Part** | **Designation** | **Quantity** | 
 |---|---|---|
@@ -115,9 +115,9 @@ Plain washers shall be used wherever the fasteners bear against softer materials
 ![Overall GMA installation with engine- and vehicle-side interface hardware](../figures/ICD_GMA-Bolts.png){ width=40%}  
 
 ## 3.3. Handling and Transport Interfaces
-An M8 stainless-steel eyebolt shall be used for handling operations. Two symmetrically arranged Ø9 mm through-holes are provided in the GMA clevis-head flange, as shown in Figure 6.  
+Two M8 stainless-steel eyebolts shall be used for handling operations. Two symmetrically arranged Ø9 mm through-holes are provided in the GMA clevis-head flange, as shown in Figure 6.  
 
-![Interface for handling operations](../figures/ICD_Handling.png){ width=60% }  
+![Interface for handling operations](../figures/ICD_Handling.png){ width=55% }  
 
  | **Interface type** | **Size** | **Material** | **Quantity** |
 |---|---|---|---|
@@ -125,12 +125,12 @@ An M8 stainless-steel eyebolt shall be used for handling operations. Two symmetr
 : Interface for GMA handling
 
 ## 3.4. Instrumentation Interface
-For the current design state, a shock sensor is shall to be attached on the GMA. Three alternative 1/4-28 UNF-3B threaded mounting locations are provided on the GMA Clevis-Head flange for installation of the shock accelerometer shown in Figure 7.  
+For the current design state, a shock sensor is shall to be attached on the GMA. Three alternative 1/4-28 UNF-3B threaded mounting locations are provided on the GMA Clevis Head flange for installation of the shock accelerometer shown in Figure 7.  
 
- ![Shock-accelerometer mounting interface](<../figures/ICD_Shock Sensor.png>){ width=60% } 
+ ![Shock-accelerometer mounting interface](<../figures/ICD_Shock Sensor.png>){ width=55% } 
 
  | **Interface type** | **Manufacturer** | **Model** | **GMA Interface** | **Electrical Interface** |
-|---|---|---|---|
+|---|---|---|---|---|
 | Shock Accelerometer | PCB PIEZOTRONICS|305C3 |1/4-28 UNF-3B  |10-32 UNF-2A coaxial plug |
 : Interface for GMA instrumentation
 
@@ -143,6 +143,12 @@ For the current design state, a shock sensor is shall to be attached on the GMA.
 ![Drawing of GMA Lug Head interface](<../figures/ICD_GMA Lug dwg.png>){ width=85% }  
 
 ![Drawing of GMA Clevis Head interface](<../figures/ICD_GMA Clevis dwg.png>){ width=50% }  
+
+\clearpage  
+
+## 4.2. Instrumentation  
+
+![Installation drawing of shock accelerometer [RD3]](<../figures/ICD_GMA shock sensor.png>){ width=80% }
 
 \clearpage  
 
