@@ -112,7 +112,7 @@ The “U” suffix in the NAS-bolt designation identifies the available passivat
  ![GMA isometric view and cross section](<../figures/GMA_isometric_cross section.png>){ width=90% }  
 
 | **Number** | **CAD-ID** | **Designation** | **Material** | **Mass (kg)** |
-|---|---|---|---|
+|---|---|---|---|---|
 | 1 | 126749/01 |GMA Clevis Head              |17-4PH - H900    |0.864  |
 | 2 | 3489/01   |Cotter Pin MS24665-374       |AISI 302 or 304  |0.0022 |
 | 3 | 126711/01 |GMA Bushing                  |17-4PH - H900    |0.0147 |
@@ -192,22 +192,22 @@ The main suggested dimensions are shown below. The centering feature is designed
 
 # 6. Preliminary cost assessment 
 
-For the preliminary cost assessment, the custom-made parts were quoted through makerverse.com, while the costs of the COTS parts were estimated using prices from suppliers such as *adeptfasteners.com, lmfixations.com, and militaryfasteners.com*. The unit prices shown below are based on order quantities of up to 10 units. The quoted prices are associated with estimated delivery times of approximately 14 to 20 business days.
+For the preliminary cost assessment, the custom-made parts were quoted through makerverse.com, while the costs of the COTS parts were estimated using prices from suppliers such as *adeptfasteners.com, lmfixations.com, and militaryfasteners.com*. The unit prices shown below are based on order quantities of up to 10 units. The quoted prices are associated with estimated delivery times of approximately 14 to 25 business days.
 
 | **Part**| **CAD-ID** | **Material** | **Cost (€/unit)** |
 | ------ | ----- | ------- |------- |
-| GMA Clevis Head             |126749/01  |17-4PH - H900    |532|
-| GMA Lug Head                |124890/01  |17-4PH - H900    |241|
-| GMA Bushing                 |126711/01  |17-4PH - H900    |35|
-| GMA Spacer                  |126707/01  |17-4PH - H900    |30|
+| GMA Clevis Head             |126749/01  |17-4PH - H900    |273|
+| GMA Lug Head                |124890/01  |17-4PH - H900    |195|
+| GMA Bushing                 |126711/01  |17-4PH - H900    |40|
+| GMA Spacer                  |126707/01  |17-4PH - H900    |31|
 | Bearing MS14103-10          |19156/01  |330C/17-4PH       |50|
 | Bolt NAS6710DU29            |3423/01    |A286             |50|
 | Castellated Nut MS9358-16   |3437/01    |A286             |88|
 | Cotter Pin MS24665-374      |3489/01    |AISI 302 or 304  |9|
-| **Total cost**              |           |                 |**1035**|
+| **Total cost**              |           |                 |**736**|
 : Cost assessment  
 
-In addition to the estimated costs listed above, a dedicated staking tool is required to secure the outer race of the bearing in the GMA Lug Head. The estimated cost of this tool is approximately €260. Therefore, the total estimated cost, including the staking tool, is **1,295 EUR**.
+In addition to the estimated costs listed above, a dedicated staking tool is required to secure the outer race of the bearing in the GMA Lug Head. This tool costs approximately € 260. Additional quality-assurance costs for the manufactured parts are estimated at € 500. Therefore, the total estimated cost of one functional GMA unit, including tooling and quality-assurance expenses, is **€ 1,496**.
 
 \clearpage
 
