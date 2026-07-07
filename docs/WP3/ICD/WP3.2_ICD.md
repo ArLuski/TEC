@@ -91,8 +91,8 @@ The GMA is attached to the Thrust Dome of the Thrust Chamber Assembly (TCA), as 
 
 | **Interface Part** | **Designation** | **Quantity** | 
 |---|---|---|
-| Hexagon head screw | ISO4017-M6x16-A4-70    | 8 |
-| Dowel pin           |ISO8734-4x10-C1        | 2 |
+| Hexagon Head Screw | ISO4017-M6x16-A4-70    | 8 |
+| Dowel Pin           |ISO8734-4x10-C1        | 2 |
 : GMA-to-engine interface hardware
 
 **Vehicle Interface**  
@@ -104,10 +104,10 @@ Table 3 show the total number of bolts, nuts, and washers required for the four 
 
 | **Interface Part** | **Designation** | **Quantity** | 
 |---|---|---|
-| Hexagon head screw   | ISO4017-M6x16-A4-70    | 8 |
-| Hexagon head screw   | ISO4017-M6x25-A4-70    | 8 |
-| Hexagon regular nut  | ISO4032-M6-A4-70       | 8 |
-| Plain washer         | ISO7092-6-200HV-A4     | 16 |
+| Hexagon Head Screw   | ISO4017-M6x16-A4-70    | 8 |
+| Hexagon Head Screw   | ISO4017-M6x25-A4-70    | 8 |
+| Hexagon Regular Nut  | ISO4032-M6-A4-70       | 8 |
+| Plain Washer         | ISO7092-6-200HV-A4     | 16 |
 : GMA-to-vehicle interface hardware
 
 Plain washers shall be used wherever the fasteners bear against softer materials, such as the aluminum Thrust Frame Beams. An overall view of the GMA with its adjacent parts to the engine respectively vehicle and fasteners is shown below.
