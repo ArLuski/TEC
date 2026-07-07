@@ -51,17 +51,23 @@ It contains the overall Manufacturing, AIT activities, suggestions for associate
 
 ## 1.2. Reference  
 
-[RD1] Gimbal Mount Assembly - Definition File / Version 001 
+[RD1] Gimbal Mount Assembly - Definition File / Version 001  
 
-[RD2] Gimbal Mount Assembly - Interface Control Document / Version 001 
+[RD2] Gimbal Mount Assembly - Interface Control Document / Version 001  
 
-[RD3] Data Sheet - ARMCO 17-4PH / 2022
+[RD3] Data Sheet - ARMCO 17-4PH / 2022  
 
-[RD4] Instructions for Double Anvil Spherical Bearing Swaging Tool #10 Wide / Pegasus Auto Racing Supplies, Inc. /  
+[RD4] Instructions for Double Anvil Spherical Bearing Swaging Tool #10 Wide / Pegasus Auto Racing Supplies, Inc.  
 
-[RD5] Bearing Installation and Retention by Swaging or Staking / AIA - NAS0331 / 2013
+[RD5] Bearing Installation and Retention by Swaging or Staking / AIA - NAS0331 / 2013  
 
-[RD6] NASA Reference Publication 1228 - Fastener Design Manual / Richard T.Barrett / 1990
+[RD6] NASA Reference Publication 1228 - Fastener Design Manual / Richard T.Barrett / 1990  
+
+[RD7] Nyx Moon - Huracan Development Logic / TEC-FRA-DOC-01004 / Issue 02  
+
+[RD8] Gimbal Mount Assembly - Justification File/ Version 001  
+
+
 
 \clearpage
  
@@ -149,60 +155,92 @@ Before applying torque, all beams shall be appropriatly positioned and centered 
 | GMA Clevis Head - Thrust Frame Beam |Bolt-Nut        | ISO4017-M6x25-A4-70  | ??? |
 : Preload of fasteners for integration  
 
-# 6. Test  
+# 6. Test 
 
-All GMA is subjected to a verification programme appropriate to their development status and intended use. In accordance with common ECSS and NASA terminology, the tests are grouped into three main categories:
+The GMA is subjected to a verification programme appropriate to their development status and intended use. In accordance with common ECSS and NASA terminology, the tests are grouped into three main categories:
   
-- Acceptance Tests
-- Development Tests
-- Qualification Tests
-
-**Acceptance** tests are performed on each manufactured part to verify conformity, workmanship, structural integrity, and basic functionality before assembly to a component and higher-level engine system testing later. 
-
-Following successful component acceptance, the hardware proceeds to engine-level testing. **Development** tests support design maturation, characterization, and the resolution of technical issues. **Qualification tests** are performed on a controlled, flight-representative configuration to demonstrate compliance with the specified performance, durability, structural, and safety requirements.
+- **Acceptance Tests**
+- **Development Tests**
+- **Qualification Tests**
 
 The following chapters describe the objectives, scope, methods, and acceptance criteria for each test category.
 
-## 6.1. Acceptance Test
+## 6.1. Testing Strategy  
 
-### 6.1.1. Inspection  
+1. Preliminary Development Phase: Acceptance tests on part-level and early testing for risk reduction shall take place during the dedicated TVC test campaign *H05*. 
 
-**Inspection prior engine operation**
+2. Development Phase: Detailed design phase using an iterative approach alongside testing of the Development Models. A total of four Development Models are tested as part of test campaigns: DM1 to DM4 [RD7]. Important to note is that the DM1-campaign already took place beginning 2026 without the GMA, but a rigid Thrust Structure. After passing the Derisking phase, the GMA will enter the Development Phase earliest in DM2.
+   
+3. Qualification Phase: Testing begins at the Final Design Key Point and continues up to the Ready for Flight
+review to ensure the Huracan engine’s readiness for its first mission
 
-**Inspection after engine operation** 
+## 6.2. Acceptance Test  
 
-**Success criteria**
+Acceptance Tests are performed on each manufactured part to verify conformity, workmanship, structural integrity, and basic functionality before assembly to a component and higher-level engine system testing later. After successful GMA component acceptance tests, the hardware proceeds to a subsystem testing in the *H05* campaign, which also encompasses the TVC-actuators and the bellows with representative routed and pressurized ducts. This campaign is understood as part of acceptance that is required for early derisking and entry of engine-level testing in the frame of Development Tests. 
 
-### 6.1.2. Functional Tests  
 
-## 6.2. Development Test  
+### 6.2.1. Inspection  
+
+Each GMA part will be inspected prior entering the acceptance tests. It consists of a visual inspection using
+a microscope if required, as well as the measurement of main physical properties such as mass and main
+dimensions. Material certificate and heat treatment checks, such as GD&T inspection according to specifications in manufacturing drawings are also reviewed during the incoming inspection. Among the custom machined parts, the main dimensions of the assembled COTS parts are to be inspected and documented in accordance with the standards specifications. 
+
+**Sucess criteria**
+• Surface: No cracks, scratches, dents, or signs of corrosion that may affect the part’s structural integrity.  
+
+• Cleanliness: The parts are free from contaminants like dirt, grease, or debris  
+
+• Material anomalies: Check for any visible signs of material inconsistency, such as discoloration, uneven texture,
+porosities. Check also for conformity of material certificate, heat treatment and thermal/mechanical properties in accordance with assumptions during theoretical analysis  
+
+• Accuracy of Dimensions and Tolerances: critical dimensions and tolerances (GD&T) match design specifications, ensuring that the part is within its specification
+
+### 6.2.2. Proof Tests 
+
+- No proof tests intended for bearing pull-through as shown in NAS0331
+- Even though a quasi-static load test is desired, it won´t be part of Acceptance Testing due to limited capabilities to simulate the load and programmatic reasons.   
+
+**Sucess criteria**
+
+### 6.2.3. Functional Tests  
+
+1. Proper assembly?
+2. Force to be tracked for assembly of Lug-Bearing
+3. Full gimbal-travel funcitonal test (Angular travel limits, Intereference
+4. Breakaway and running torque 
+6. End-stop and interference checks
+
+
+
+## 6.3. Development Test  
 
 Development tests are conducted during the design-maturation phase to build confidence in new designs and concepts aligned with the Overall Test Plan objectives on the engine system level in accordance to [RD2]. Their objectives are to:
 
 - Characterize the behaviour and performance of the engine;
 - Identify weaknesses in the materials, components, interfaces, or overall design;
-- Validate and correlate analytical models;
+- Validate and correlate analytical/numerical models;
 - Investigate operating limits and off-nominal behaviour;
 - Support the resolution of design issues; and
-- Provide confidence that the final design can successfully complete qualification.
+- Provide confidence that the final design can successfully complete enter the next Development stage and finally qualification.
 
-Development-test conditions can extend beyond the normal design or operating range where this is necessary to identify credible weaknesses or design deficiencies. Development testing is iterative and can be performed concurrently with design modifications. However, successful development testing does not, by itself, constitute qualification unless the test article, configuration, test levels, durations, instrumentation, procedures, and success criteria satisfy all applicable qualification requirements.
+Development-test conditions can extend beyond the normal design or operating range where this is necessary to identify credible weaknesses or design deficiencies. Development testing is iterative and can be performed concurrently with design modifications. However, successful development testing does not, by itself, constitute qualification unless the test article, configuration, test levels, durations, instrumentation, procedures, and success criteria satisfy all applicable qualification requirements.  
+
+The current GMA represents the first design iteration within the project. During the development of the design, it could be shown, that parallel developments of adjacent components have an immediate and meaningful impact on the GMA design and its representativity for future development and qualification models. As shown in the Justification File [RD7] for instance, the GMA is not designed for thermal loads. This is given by the current design of the Thrust Dome that is a dependend of the Ignition System (IGS) design update and the mission duration of the on-Earth demonstrator *Oneiros* of less then *60s*. When the IGS design changes in favor of more compactness and mass reduction (to be expected) and the mission duration is closer to the Lunar Mission of approx. *400s*, thermal loads are expected to drive the GMA functionality and design. 
+
+**Place Testing Objectives here**
+- Thermal map of different positions as function of development
+- Bearing lifetime
+- Wear of parts
+- Loos of torque
   
-## 6.3. Qualification Test  
+## 6.4. Qualification Test  
 
-Qualification testing is performed after the design has reached a controlled and sufficiently mature configuration. It is conducted on a dedicated qualification engine or other approved flight-representative engine to demonstrate that the design complies with its specified requirements in the intended operational environments, including the applicable qualification margins. It is assumes that the objectives of the Qualification Tests are defined and executed at engine system level. Hence, the objectives are ellaborated in the Huracan Overall Test Plan [RD2]
-
-# 7. AIT documentation  
-
-Assembly and acceptance tests procedures shall be written and executed using a system with version control capability.  
-
-Non-conformances shall be documented and tracked in the TEC-internal ERP system and evaluated together with the quality engineers.
-
+Qualification testing is performed after the design has reached a controlled and sufficiently mature configuration. It is conducted on a dedicated qualification engine or other approved flight-representative engine to demonstrate that the design complies with its specified requirements in the intended operational environments, including the applicable qualification margins. It is assumed that the objectives of the Qualification Tests are defined and executed at engine system level. Hence, the qualification testing objectives are elaborated in the Huracan Overall Test Plan [RD2].  
 
 \clearpage  
 
-# 8. Annex  
-## 8.1. Instructions: Spherical Bearing Swaging Tool
+# 7. Annex  
+## 7.1. Instructions: Spherical Bearing Swaging Tool
 
 ![User instructions for swaging](<../WP3/figures/Pegasus_instructions bearing swaging.png>)  
 
@@ -210,12 +248,14 @@ Non-conformances shall be documented and tracked in the TEC-internal ERP system 
 
 ![Gauging of swaged bearing](<../WP3/figures/Pegasus_instructions bearing swaging_Fig5.png>)
 
-# 9. Acronym  
+# 8. Acronym  
 
 | **Acronym**  | **Definition**   |
 |---|---|
+|COTS |Commercial Off-The-Shelf|
 |GMA  |Gimbal Mount Assembly|
-|GSE  |Ground Support Equipment|
-|MATI |Manufacturing, Assembly, Integration and Test|
+|GSE  |Ground Support Equipment|  
+|IGS |Ignition System|
+|MAIT |Manufacturing, Assembly, Integration and Test|
 : Acronyms
 
