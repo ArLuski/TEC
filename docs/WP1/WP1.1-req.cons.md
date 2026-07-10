@@ -65,12 +65,12 @@ Based on the preliminary requirements initially shared by The Exploration Compan
 
 ## 2.1. Environmental requirements  
 
-**REQ-00X - Pollution requirements**  
+**REQ-033 - Pollution requirements**  
 
 Sensitive areas, such as regions of relative motion, shall be protected against sand particles with an average size of 0.2 mm at a temperature of 49.6 °C [RD3].  
 ________________________
 
-**REQ-00X - Ambient requirements**  
+**REQ-020 - Ambient requirements**  
 
 According to the system requirements of *Oneiros*, the sea level conditions are defined by a pressure of 0.994 bar to 1.0276 bar and 12 % to 91 % humidity. The ambient temperature ranges from 8.3 °C to 49.6 °C. [RD3]  
 
@@ -81,7 +81,7 @@ According to the system requirements of *Oneiros*, the sea level conditions are 
 The GMA design provides an operational deflection capability of ±10° per axis (pitch and yaw), which covers the GNC needs as well as the mechanical limits of the subsystem and its components (e.g., bellows and actuators).  
 ________________________
 
-**REQ-00X - Max. gimbal capability**  
+**REQ-034 - Max. gimbal capability**  
 
 For off-nominal cases and emergency authority, the max. gimbal angle shall not exceed +/-12 °.   
 ________________________
@@ -106,7 +106,7 @@ ________________________
 The maximum mass of the GMA shall be equal or below 5 kg with a measurement accuracy of +/-0.1 %.  
 ________________________
 
-**REQ-00X - Geometrical envelope**  
+**REQ-013 - Geometrical envelope**  
 
 A damage- and collision-free motion under worst case angle conditions is required between the Igniter´s main body (incl. it´s attachments) and the GMA geometry. A minimum clearance of 20 mm is to be considered between moving parts. The maximum geometrical limit of th GMA is given by the mass constraint, the loads and (thermo-)mechanical stress requirements mentioned in this document. The Ignition System´s main body (Ø70 mm) is designed with a vertically offset of 60 mm from the Injection Head (IH) upper flange surface.  
 ________________________
@@ -133,12 +133,12 @@ The GMA shall transmit a total nominal thrust load of 15 kN.
 <!-- Formulation rather generic for future flexibility and adaptation like. 15 kN under worst case gimbal angle conditions might overconstraint the GMA-->  
 ________________________
 
-**REQ-00x - Quasi-Static Load (QSL)**  
+**REQ-039 - Quasi-Static Load (QSL)**  
 
 For single events, the GMA shall sustain an excessive thrust load of 22.5 kN at gimbal angle of 0 °, which includes a safety factor of 1.5 applied to the nominal thrust.  
 ________________________
 
-**REQ-00x - Mechanical and thermal transient**  
+**REQ-021 - Mechanical and thermal transient**  
 
 Until steady state conditions are achieved, transient conditions dominate. A cooling from ambient 280 K to 180 K within 10 s is to be considered linearly, with a slope of 10 K/s. This is to be taken into account at the GMA surface, that is connected to the IH upper flange. A chamber overpressure rate of 210 bar/s is to be anticipated for a transinent occasion.
 <!--280K (ambient) was measured at DLR. For Oneiros it might be higher as almost 50°C can be targeted for ambient tests at UAE. Also,
@@ -154,23 +154,23 @@ ________________________
 
 **REQ-030 - Cycling**  
 
-The GMA shall sustain a minimum of 1000 cycles, which is derived from preliminary GNC-data.  
+The GMA shall sustain a minimum of 1000 cycles, which is derived from preliminary GNC-data for the *Oneiros* mission.  
 ________________________  
 
 
 ## 2.4. Growth potential requirements
 
-**REQ-00x - Extended cycling**  
+**REQ-035 - Extended cycling**  
 
 For further utilization of the GMA for flight qualification and preperation for the moon mission, 26520 cycles are targeted.  
 ________________________  
 
-**REQ-00x - Lateral misalignment**  
+**REQ-036 - Lateral misalignment**  
 
 The GMA shall contain features to compensate lateral misalignment of the thrust vector up to +/-10 mm [RD4].  
 ________________________  
 
-**REQ-00x - Vacuum environment**  
+**REQ-037 - Vacuum environment**  
 
 The GMA performance in ambient conditions shall be adapted to operate feasibly in vacuum, especially concerning lubrication, thermal and mechanical loads. 
 

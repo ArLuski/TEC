@@ -62,14 +62,14 @@ This document identifies and defines the internal and external interfaces of the
 ## 2.1. Engine System and GMA 
 The figure shows the location of the GMA within the engine system, progressing from the complete engine assembly to a detailed view of the GMA.
 
-![GMA location within the engine system](<../figures/ICD_engine and GMA.png>){ width=100% }  
+![GMA location within the engine system](<../figures/ICD_engine and GMA.png>){ width=93% }  
 
 # 3. Interfaces  
 
 ## 3.1. Internal Interfaces: GMA
 The internal interfaces comprise all joints that connect the GMA component. As shown in the exploded view below, the primary internal mechanical interface is the connection between the GMA Lug and Clevis Head. The joint is established by a single bolt-and-nut assembly and secured against loosening by a Cotter Pin.
 
-![GMA Internal Interface](<../figures/ICD_GMA internal.png>){ width=50% }  
+![GMA Internal Interface](<../figures/ICD_GMA internal.png>){ width=45% }  
 
 The controlled interface components and their material specifications are listed in Table 1. 
 
@@ -107,7 +107,7 @@ Table 3 show the total number of bolts, nuts, and washers required for the four 
 | Hexagon Head Screw   | ISO4017-M6x16-A4-70    | 8 |
 | Hexagon Head Screw   | ISO4017-M6x25-A4-70    | 8 |
 | Hexagon Regular Nut  | ISO4032-M6-A4-70       | 8 |
-| Plain Washer         | ISO7092-6-200HV-A4     | 16 |
+| Plain Washer         | ISO7092-6-200HV-A4     | 16|
 : GMA-to-vehicle interface hardware
 
 Plain washers shall be used wherever the fasteners bear against softer materials, such as the aluminum Thrust Frame Beams. An overall view of the GMA with its adjacent parts to the engine respectively vehicle and fasteners is shown below.
