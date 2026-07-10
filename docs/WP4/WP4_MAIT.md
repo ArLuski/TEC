@@ -82,7 +82,7 @@ It contains the overall Manufacturing, AIT activities, suggestions for associate
 
 The Gimbal Mount Assembly (GMA) is the primary thrust-transmitting interface between the engine and vehicle. It transfers engine thrust to the vehicle structure and permits engine gimbaling for thrust-vector control. The design is defined in the Definition File [RD1] and Interface Control Document [RD2].  
 
-![GMA isometric view](../WP3/figures/GMA_isometric.png){width=30%}
+![GMA isometric view](../WP3/figures/GMA_isometric.png){width=40%}
 
 # 3. Manufacturing  
 
@@ -94,7 +94,7 @@ Manufacturing shall follow the company's approved processes from material procur
 
 All custom machined parts of the GMA (Figure 2) are made of martensitic precipitation hardened stainless steel, that combines high strength, excellent corrosion resistance, easy heat treatment and comparable thermal expansion w.r.t Inconel 718 (engine). As one of the main structural parts of the engine, the GMA is treated as a critical application. For this, the material shall be sourced in a precipitation hardned condition. The final material choice is **17-4PH - H900**, while the suffix expresses the heat treatment condition. The figure below shows a general overview of material properties as a function of the precipitation hardened conditions ranging from *H900* to *H1150M*.
 
-![17-4PH, Typical Mechanical Properties - Bar](<../WP3/figures/17-4PH properties.png>){width=80%}  
+![17-4PH, Typical Mechanical Properties - Bar [RD3]](<../WP3/figures/17-4PH properties.png>){width=80%}  
  
 
 ## 3.2. Machining 
@@ -111,9 +111,9 @@ This chapter describes the required tools and procedures to assemble the GMA.
 
 ## 4.1. Required Tools  
 
-The tools required mount the GMA are listed below:
+The tools required to mount the GMA are listed below:
 
-- Hydraulic press to position the Spherical Bearing *MS14103-10* with the GMA Lug Head with a calibrated load of 21,375 lbs +/- 3,000 (95 kN +/-13 kN) [RD4]
+- Hydraulic press to position the Spherical Bearing *MS14103-10* with the GMA Lug Head  
 - Double Anvil Spherical bearing Swaging Tool for Spherical Bearing *MS14103-10* according to [RD5]
 - Troque Wrench for Bolt NAS6710D29 and Nut MS9358-016
 - Torque Wrench for ISO4017-M6x16/25-A4-70 hexagon head screws and ISO4032-M6-A4-70 hexagon regular nuts
@@ -127,19 +127,19 @@ The assembly is divided in two main steps (Figure 4).
 
 ![GMA - Assembly steps](<../WP3/figures/GMA_assembly steps.png>){width=80%}  
 
-In the **first step** (Figure 4, left), the Spherical Bearing *MS14103-10* is installed into the Clevis Lug Head. Due to the interference fit between the outer race of the Spherical Bearing and the Lug Head bore ranging from *-0.0055 mm to +0.0202 mm*, a mounting force will be required. The bearing shall be pressed centrally into the housing using the custom anvil, CAD-ID: 2020/01. The tool shall contact the bearing outer ring only. No insertion load shall pass through the inner ring or PTFE liner. The tool shall position the bearing at the specified axial location. The bearing shall then be swaged in accordance with Method 100 of [RD5] and the instructions in [RD4]. The final swage geometry and bearing breakaway torque shall be inspected and recorded.  
+In the **first step** (Figure 4, left), the Spherical Bearing (2) is installed into the Clevis Lug Head (3). Due to the interference fit between the outer race of the Spherical Bearing and the Lug Head bore ranging from *-0.0055 mm to +0.0202 mm*, a mounting force will be required. The bearing shall be pressed centrally into the housing using the custom Anvil (1), CAD-ID: 2020/01. The tool shall contact the bearing outer ring only. No insertion load shall pass through the inner ring or PTFE liner. The tool shall position the bearing at the specified axial location. The bearing shall then be swaged in accordance with Method-100 of [RD5] and the instructions in [RD4]. The final swage geometry and bearing breakaway torque shall be inspected and recorded.  
 
 In the **second step** (Figure 4, right), the swaged Lug Head subassembly is installed in the GMA Clevis Head. The remaining components use clearance fits and shall be assembled at ambient temperature.  
 
-Following the numbering in Figure 4, position the Spacer (2) and Lug Head subassembly (3) coaxially within the Clevis Head (8). The Clevis Head ears are asymmetric. Install the Spacer (2) on the inner side, between the smaller Clevis bore and the bearing inner ring.  
+Following the numbering in Figure 4, position the Spacer (4) and Lug Head subassembly (2,3) coaxially within the Clevis Head (9). The Clevis Head ears are asymmetric. Install the Spacer (4) on the inner side, between the smaller Clevis bore and the bearing inner ring.  
 
-Insert the Bushing (4) through the larger Clevis bore from the opposite side. Push it inward until it contacts the bearing inner race.
+Insert the Bushing (5) through the larger Clevis bore from the opposite side. Push it inward until it contacts the bearing inner race.
 
-When the Spacer, Lug Head subassembly, and Bushing are aligned, insert the NAS-bolt (5) from the Bushing side. Install the Castellated Nut MS9358-016 (6) on the opposite side.  
+When the Spacer, Lug Head subassembly, and Bushing are aligned, insert the NAS-bolt (6) from the Bushing side. Install the Castellated Nut (7) on the opposite side.  
 
-The NAS-bolt (5) is then tighted by hand with the Castellated Nut (6) on the opposite, outer side of the GMA Clevis Head (8). After a hand-tight preload between the Bolt and Nut, the Nut´s preload is then increased until the next slot of the nut aligns with the drilled hole of the bolt. This final applied torque is to be recorded.   
+The NAS-bolt (6) is then tighted by hand with the Castellated Nut (7) on the opposite, outer side of the GMA Clevis Head (9). After a hand-tight preload between the Bolt and Nut, the Nut´s preload is then increased until the next slot of the nut aligns with the drilled hole of the bolt. This final applied torque is to be recorded.   
 
-After appliction of the torque, both parts shall be secured from loosening with the Cotter Pin (7). In accordane to NASA recommendations [RD6], the Cotter Pin shall be bended as illustrated in Figure 5.  
+After appliction of the torque, both parts shall be secured from loosening with the Cotter Pin (8). In accordane to NASA recommendations [RD6], the Cotter Pin shall be bended as illustrated in Figure 5.  
 
 ![Bending of Cotter Pin [RD6]](<../WP3/figures/GMA_NASA_thread locking.png>){width=40%}  
 
@@ -188,9 +188,9 @@ The following sections define the objectives, scope, methods, and success criter
 
 ## 6.1. Testing Strategy  
 
-**1. Preliminary Development Phase**: Acceptance tests on GMA-part and compoenent level and early testing for risk reduction shall take place during the dedicated TVC test campaign *H05*. 
+**1. Preliminary Development Phase**: Acceptance testing will be performed at both the individual GMA part level and the assembled GMA component level. In addition, the dedicated *H05* de-risking campaign will include early testing of the complete TVC system to reduce technical risks.
 
-**2. Development Phase**: Detailed design phase using an iterative approach alongside testing of the Development Models. A total of four Development Models are tested as part of test campaigns: DM1 to DM4 [RD7]. The DM1 campaign used a rigid Thrust Structure without the GMA. The earliest planned GMA entry is therefore DM2, subject to completion of the preceding risk-reduction activities.
+**2. Development Phase**: The detailed design will be developed iteratively and supported by testing of four Development Models, DM1 through DM4, within the respective test campaigns [RD7]. The DM1 campaign used a rigid Thrust Structure and did not include the GMA. Consequently, the earliest planned integration and testing of the GMA is during the DM2 campaign, subject to the sucessfull completion of the preceding risk-reduction activities.  
    
 **3. Qualification Phase**: Testing begins at the Final Design Key Point and continues up to the Ready for Flight
 review to ensure the Huracan engine’s readiness for its first mission
@@ -232,12 +232,12 @@ a Development Model (engine level), will not be representative to give evidence 
 This is mainly driven by the nonlinear behaviour of the bearings PTFE-fabric liner and its load-dependend
 change of friction coefficient.  
 
-Unlike described in [RD5], the Spherical Bearing MS14103-10 shall not be proof tested for push out of the bearing. Instead, after the staking process, the bearing groove shall be gauged as stated in [RD4] or respectively shown in chatper 7.1. A push out test is not desired as long as the staking process is consistently followed in alignment to the recommendations in [RD4].  
+Unlike described in [RD5], the Spherical Bearing MS14103-10 shall not be proof tested for push out of the bearing. Instead, after the swaging process, the bearing groove shall be gauged as stated in [RD4] or respectively shown in chatper 7.1. A push out test is not desired as long as the swaging process is consistently followed in alignment to recommendations in [RD4].  
 
 ### 6.2.3. Functional Tests  
 
 **Gimbal angle**  
-The gimbal angle of the GMA Lug Head about the z-axis (yaw) is limited by Mechanical Stops to a nominal value of ±12 ° [RD1]. The gimbal angle about the y-axis is limited by the available stroke of the TVC actuators.  
+The gimbal angle of the GMA Lug Head about the z-axis (yaw) is limited by Mechanical Stops to a nominal value of ±12 ° [RD1]. The gimbal angle about the y-axis (pitch) is limited by the available stroke of the TVC actuators.  
 
 The maximum gimbal angle about the z-axis is particularly important because the Mechanical Stops prevent the spherical bearing from exceeding its maximum permissible oscillation angle of ±12 °.  
 
@@ -246,13 +246,13 @@ The maximum gimbal angle can be verified using a magnetic digital angle gauge wi
 The Lug Head shall then be displaced relative to the fixed Clevis Head in a controlled and precise manner until the Mechanical Stop is reached in both directions, +12 ° and -12 °. Measurement accuracy and repeatability can be improved by minimizing any unintended roll motion during displacement.  
   
 **Roll Error**  
-The GMA limits vehicle roll about the x-axis through the Anti-Roll Features of the Lug Head and the corresponding inner surfaces of the Clevis Head.  
+The GMA limits vehicle roll about the vertical x-axis through the Anti-Roll Features of the Lug Head and the corresponding inner surfaces of the Clevis Head.  
 
 The clearance shall be measured at all four contact locations. The smallest measured clearance defines the roll angle at which first contact occurs.  
 
 With the Lug Head centred in the Clevis Head, the nominal clearance is 0.3 mm at each location. Based on the defined geometry, this corresponds to a maximum roll error of less than 0.8° (CAD value).
 
-![Gauging of Roll-Error](<../WP3/figures/GMA_roll gauging.png>){width=50%}  
+![Position for gauging to assess Roll-Error](<../WP3/figures/GMA_roll gauging.png>){width=53%}  
 
 **Geometrical Collision**  
 During oscillation of the GMA Lug Head, a visual inspection shall confirm that contact between the GMA Lug Head and the GMA Clevis Head occurs only at the intended contact locations.  
@@ -263,7 +263,7 @@ Like specified in [RD1], when the maximum yaw angle is reached, the designated M
 
 Examples of potential contact or interference areas that require particular attention are shown in Figure 10.  
 
-![GMA - Potential for geometrical collision](../WP3/figures/GMA_yaw12deg_collision.png){width=48%}  
+![GMA - Areas of potential collision](../WP3/figures/GMA_yaw12deg_collision.png){width=65%}  
 
 **Breakaway Torque**  
 The breakaway torque of the Spherical Bearing *MS14103-10* is the torque required to initiate relative angular movement between the inner and outer races when the inner race is held stationary and no external load is applied. This functional test shall support to capture the friction coefficient as referenc for comparison later under operating conditions during Development Tests (see also REQ-018 in [RD10]) 
@@ -273,7 +273,7 @@ Verification of the breakaway torque is important for demonstrating TVC function
 Two separate measurements shall be performed to evaluate any change in bearing friction:
 
 - *Bearing-only condition*:  
-  The breakaway torque of the uninstalled bearing shall be measured in accordance with the applicable requirements of MS14103.
+  The breakaway torque of the uninstalled bearing shall be measured in accordance with the applicable requirements of *MS14103*.
 
 - *Installed and swaged condition*:  
 The breakaway torque shall be measured after the bearing is installed and swaged into the GMA Lug Head. This measurement shall account for any influence of the installation process and the interference fit on bearing friction.
@@ -284,7 +284,7 @@ The breakaway torque shall be measured after the bearing is installed and swaged
 | Gimbal angle |max. 12 °| Overshooting reduces bearing lifetime|
 | Geometrical Collision |Controlled contact| Contact with intended surfaces first|
 | Break Away Torque bearing only |max. 8 IN-LB | Equals 0.9 Nm|
-| Break Away Torque bearing swaged |< 8 IN-LB | Bearing friction decreases with higher surface pressure|
+| Break Away Torque bearing swaged |< 8 IN-LB | Lower then bearing only measurement|
 : Sucess criteria for functional GMA tests 
 
 ## 6.3. Development Test  
@@ -295,7 +295,7 @@ Where necessary to identify credible weaknesses or design deficiencies, developm
 
 The current GMA represents the first design iteration within the project. During its development, it became evident that parallel developments of adjacent components have a direct and significant impact on the GMA design and on its representativeness with respect to future development and qualification models.  
 
-For example, as described in the Justification File [RD7], the current GMA is not designed to withstand significant thermal loads. This is a consequence of the current Thrust Dome design, which depends on the future design of the Ignition System (IGS), as well as the mission duration of the on-Earth demonstrator *Oneiros*, which is less than 60 s. If the IGS design is modified to achieve the desired reductions in size and mass, and if the mission duration approaches that of the lunar mission, approximately 400 s, thermal loads are expected to become a significant driver of GMA functionality and design.
+For example, as described in the Justification File [RD7], the current GMA is not designed to withstand significant thermal loads. This is a consequence of the current Thrust Dome design, which depends on the future design of the Ignition System (IGS), as well as the mission duration of the on-Earth demonstrator *Oneiros*, which is less than 60 s. If the IGS design is modified to achieve the desired reductions in size and mass, and if the mission duration approaches that of the Lunar Mission, approximately 400 s, thermal loads are expected to become a significant driver of GMA functionality and design.
 
 Provided that the GMA design concept is successfully demonstrated during DM2 and the on-Earth demonstration, these parameters are expected to define the principal design challenges and test objectives for subsequent development-test campaigns.
 
@@ -319,14 +319,14 @@ Thermocouples (TE) shall be used to measure the transient temperature response a
 
 The top view shown in Figure 11 depicts the GMA Lug Head connected to the Thrust Dome by hexagonal-head bolts. The Thrust Dome is, in turn, attached to the Injection Head (IH).  A minimum of four TE´s is recommended. The TE´s should be distributed around the GMA Lug Head flange, with one sensor positioned on each side, to monitor the temperature distribution within the flange plane.  
 
-![GMA Lug Head - Position of Thermocouples](../WP3/figures/GMA_test_te.png){width=45%}  
+![GMA Lug Head - Position of Thermocouples](../WP3/figures/GMA_test_te.png){width=55%}  
 
 **Bearing Condition Monitoring and Service-Life Assessment**  
 The objective is to monitor the condition of the *MS14103-10* Spherical Bearing throughout the engine test campaign and to determine whether it remains suitable for continued use. Ideally, the initial condition of the bearing shall be recorded before the first test and reassessed after each test sequence. However, the inspection intervals shall be coordinated with the other engine test objectives and the schedule and cost constraints of the test campaign, as additional measurement activities may increase test turnaround time and reduce the time available for testing.   
 
 Bearing wear shall be evaluated by measuring the increase in radial play relative to the initial condition. All measurements shall be performed using the same measurement setup, load direction, measurement load, and temperature conditions. The accumulated operating time, number of actuation cycles, bearing loads, and measured temperatures shall be documented. Figure 12 shows a design suggestions for assessing wear by measuring radial play.   
 
-![MIL-B-81820 measurement of radial play [RD12]](<../WP3/figures/GMA_MILB81820E_wear rad. measurement.png>){width=40%}  
+![MIL-B-81820 measurement of radial play [RD12]](<../WP3/figures/GMA_MILB81820E_wear rad. measurement.png>){width=50%}  
 
 The maximum permissible increase in radial play relative to the initial measured condition shall be 0.1 mm. If this limit is exceeded, the bearing shall be replaced before further testing. The bearing shall also be replaced if an inspection identifies liner damage, metal-to-metal contact, seizure, abnormal friction, excessive breakaway torque, or any other condition that could impair GMA functionality.  
 
@@ -341,7 +341,7 @@ Relative motion is intended to occur only between the inner and outer races of t
 
 To detect rotation, displacement, or loosening within the bolted joint, witness marks shall be applied across the bolt, nut, and adjacent components. The witness marks shall be visually inspected after each defined test sequence for any discontinuity or misalignment.    
 
-During the bearing-wear inspections described above, the grip section of the NAS bolt, the bores of the GMA Lug Head, the spacer, and the bushing shall also be inspected for scratches, fretting, deformation, material transfer, and other signs of wear. Where accessible, the dimensions of all contact surfaces at which unintended relative motion may occur due to insufficient clamping force shall be measured and compared with the dimensional inspection results recorded before assembly of the GMA.  
+During the bearing-wear inspections described above, the grip section of the NAS bolt, the bores of the GMA Lug Head, the Spacer, and the bushing shall also be inspected for scratches, fretting, deformation, material transfer, and other signs of wear. Where accessible, the dimensions of all contact surfaces at which unintended relative motion may occur due to insufficient clamping force shall be measured and compared with the dimensional inspection results recorded before assembly of the GMA.  
 
 | **Objective**| **Sucess criteria** | **Comment** | 
 | ------ | ----- |----- |
@@ -350,7 +350,7 @@ During the bearing-wear inspections described above, the grip section of the NAS
 | Wear of Bolt, Spacer, Bushing, GMA Lug Head bores |no wear|wear not permissible|
 : Sucess criteria for GMA development tests  
 
-The approximate temperature difference of delta_T~10 °C is intended as an indicator during extended hot-fire testing that the GMA Lug Head bore is approaching temperatures at which thermally induced mechanical effects may become significant. This value may also be used to define a test redline, allowing the test to be stopped before thermal contraction causes complete blockage or seizure of the GMA.  
+The approximate temperature difference of delta_T~10 °C is intended as an rough indicator during extended hot-fire testing that the GMA Lug Head bore is approaching temperatures at which thermally induced mechanical effects may become significant. This value may also be used to define a test redline, allowing the test to be stopped before thermal contraction causes complete blockage or seizure of the GMA.  
   
 ## 6.4. Qualification Test  
 
