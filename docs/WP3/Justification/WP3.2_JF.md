@@ -30,7 +30,7 @@ header-includes:
   - \fancyhead[L]{\nouppercase{\leftmark}}
   - \pagestyle{fancy}
   - \fancyhf{}
-  - \fancyhead[R]{Gimbal Mount Assembly - Requirement Consolidation - Version 001}
+  - \fancyhead[R]{Gimbal Mount Assembly - Justification File - Version 001}
   - \renewcommand{\headrulewidth}{0.4pt}
   - \fancyfoot[C]{\thepage}
   - \usepackage{hyperref}
@@ -45,30 +45,69 @@ header-includes:
 \pagenumbering{arabic}
 
 # 1. Introduction
-## 1.1. Scope
-This document presents the Gimbal Mount Assembly (GMA) Trade-Off Report. The objective of this file is to support the concept design decision among alternative solutions taking into account technical and programmatic constraints. 
+## 1.1. Scope  
+This document presents the Design Justification File for the Gimbal Mount Assembly (GMA). Its purpose is to explain the rationale behind the selected design and demonstrate that it meets the baseline requirements specified in [RD02]. It lists and describes the justification for:  
+
+- Functional Design
+- Thermal Design
+- Mechanical Design
 
 ##  1.2. Reference
-[RD1] A.Lukanowski - Gimbal Mount Assembly - Requirement Consolidation / Version 0 - Luebeck 2026
+[RD1] A.Lukanowski - Gimbal Mount Assembly - Requirement Consolidation / Version 0 - Luebeck 2026  
 
-[RD2] BEARINGS, CONTROL SYSTEM COMPONENTS, AND ASSOCIATED
-HARDWARE USED IN THE DESIGN AND CONSTRUCTION OF
-AEROSPACE MECHANICAL SYSTEMS AND SUBSYSTEMS / MIL-STD-1599 
+[RD02] Gimbal Mount Assembly - Requirement Consolidation / Version 001  
 
 
 \clearpage
 
-# 2. Tolerances and fits
+# Functional Design
+## Chosen Tolerances and fits
 **JUSTIFICATION**
 **=>LUG-BEARING: Recommendation by [RD2] and supplier recommendations for rod ends**
 **=>Bearing-Bolt dimensions given**
 **=>BUSHING-CLEVIS chosen to be clearance fit to ensure precise axial positioning of BEARING innter race**
-**SPACER/BUSHING-BOLT clearance fit for flexibiltiy in terms of integration**
+**SPACER/BUSHING-BOLT clearance fit for flexibiltiy in terms of integration**  
+**Show tolerance fit recommendations MIL-Standards, NHBB, RBC, SKF**
+
+## Preload of NAS-bolt
+
+# Thermal Analysis  
+**Generic Boundary Conditions**
+- Load assumptions
+- Convection, Radiation, Conduction
+
+# Mechanical Analysis  
+## Bearing Lifetime
+  - Show first how size was determined @MIL-HDBK-1599 - 201.143
+  - Show computed lifetime according SKF
+  - Discuss results
+## Bolt, Lug, Clevis
+  - Preliminary assesment Ro/Ma
+  - Show simplified assumptions and analytical result
+  - Show numerical result
+## Static Structural  
+ ## Prelminary Analysis
+  ### Bolt, Lug, Clevis  
+
+  ### Spherical Bearing: Liner Stiffness  
+
+## GMA Static-Structural Analysis
+  - 0° with Thrust load and Acceleratoin
+  - Worst case angles (pitch/yaw)
+  - Discuss results
+    - Modelling of liner (boded)
+
+# Conclusion 
+\clearpage  
 
 
-## 2.1. blabla
+# Annex
+## Boundary Conditions Thermal Analysis 
+
+## Boundary Conditions Static Structural Analysis  
 
 
+\clearpage 
 # 3. Acronym List  
 The acronyms used in this document are listed below.  
 

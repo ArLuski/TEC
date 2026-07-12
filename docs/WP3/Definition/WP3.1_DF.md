@@ -136,7 +136,7 @@ The selection of dimensional fits between mating cylindrical surfaces is governe
 | Bolt & Bearing    |15.8369–15.8496 |15.8623–15.8750 |**+0.0127 to +0.0381**|
 | Bolt & Clevis     |15.8369–15.8496 |15.8623–15.8750 |**+0.0127 to +0.0381**|
 | Bolt & Bushing    |15.8369–15.8496 |15.8623–15.8750 |**+0.0127 to +0.0381**|
-| Bolt & Spacer     |15.8369–15.8496 |15.8623–15.8750 |**+0.0127 to +0.0381**|
+| Bolt & Spacer     |15.8369–15.8496 |15.8750–15.902  |**+0.0254 to +0.0651**|
 | Bushing & Clevis  |19.9800–19.9930 |20.0000–20.0210 |**+0.0070 to +0.0410**|
 : Tolerances and fits  
 
