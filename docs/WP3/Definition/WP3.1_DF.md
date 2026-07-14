@@ -53,21 +53,21 @@ The Definition File serves as the identity card of the Gimbal Mount Assembly (GM
 
 ##  1.2. Reference
 
-[RD1] Nyx Moon - Huracan Development Logic / TEC-FRA-DOC-01004 / Issue 02 
+[RD01] Nyx Moon - Huracan Development Logic / TEC-FRA-DOC-01004 / Issue 02 
 
-[RD2] Gimbal Mount Assembly - Requirement Consolidation / Version 001 
+[RD02] Gimbal Mount Assembly - Requirement Consolidation / Version 001 
 
-[RD3] Gimbal Mount Assembly - Trade-Off Report / Version 001 
+[RD03] Gimbal Mount Assembly - Trade-Off Report / Version 001 
 
-[RD4] Gimbal Mount Assembly - Interface Control Document / Version 001 
+[RD04] Gimbal Mount Assembly - Interface Control Document / Version 001 
 
-[RD5] Gimbal Mount Assembly - Justification File / Version 001 
+[RD05] Gimbal Mount Assembly - Justification File / Version 001 
 
 
 \clearpage
 
-# 2. GMA Overview
-## 2.1. Engine System Context  
+# 2. GMA Overview  
+## 2.1. Context to Engine System   
 The development logic of the Huracan engine system, as presented during the Preliminary Design Review (PDR), features a rigid thrust structure that interfaces the main engine with the vehicle [RD1]. Based on this logic, GNC maneuvers were originally intended to be performed by a Reaction Control System (RCS).
 
 For the on-Earth demonstrator *Oneiros*, which shall be driven by the Huracan engine, pitch and yaw control is planned to be realized by a Thrust Vector Control (TVC) system. The TVC system steers the vehicle by physically pivoting, or gimballing, the main engine in order to vector the thrust. Therefore, the main mechanical components of the TVC system are the GMA and two actuators. 
