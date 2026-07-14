@@ -165,7 +165,7 @@ As part of the preliminary GMA development, a transient thermal model was establ
 | Ambient Temperature |322.75 K |In accordance with [RD08]] |
 | Flange connections |Bonded |Ideal thermal contact without interface resistance|
 | Heat transfer |Thermal conduction |Radiation and convection neglected|
-: Generic boundary conditions for the transient thermal analysis
+: Generic boundary conditions for the Transient Thermal Analysis
 
 The calculated temperature distributions after mission durations of 60 s for *Oneiros* and up to 500 s for Terminal Moon are shown in **Figure 7**.  
 
@@ -193,27 +193,58 @@ For the current GMA configuration and the short-duration of the *Oneiros* test, 
 The FE-modeling assumptios are to be detailed and correlated in further justification loops by temperature measurements as recommended in the Manufacturing, Assembly, integration and Test Plan (MAIT) [RD10]. 
 
 # 4. Mechanical Analysis  
-## 4.1. Bearing Lifetime
-  - Show first how size was determined @MIL-HDBK-1599 - 201.143
-  - Show computed lifetime according SKF
-  - Discuss results
-## 4.2. Bolt, Lug, Clevis
-  - Preliminary assesment Ro/Ma
-  - Show simplified assumptions and analytical result
-  - Show numerical result
-## 4.3. Static Structural  
-## 4.4. Prelminary Analysis
-### 4.4.1. Bolt, Lug, Clevis  
 
-### 4.4.2. Spherical Bearing: Liner Stiffness  
+## Static-Structural: GMA - pitch 0°, yaw 0°  
+The ungimbaled configuration demonstrates the neutral position of the GMA. Generic boundary conditions that are considered in this analysis can be seen in **Table ???**. A detailed description of the boundaries is attached in the Annex. 
 
-## 4.5. GMA Static-Structural Analysis
-  - 0° with Thrust load and Acceleratoin
-  - Worst case angles (pitch/yaw)
-  - Discuss results
-    - Modelling of liner (boded)
+| **Mechanical Boundary** | **Expression** | **Comment** | 
+|---|---|---|
+| Mechanical thrust load| 22.5 kN | 1.5*15 kN under vacuum |
+| Vehicle Acceleration |-11.8 kN |30 * 9.816 m/s^2 * 40 kg |
+| Mechanical Fixation |Fixed support |All degrees of freedom locked|
+| Main flange connections |$\mu$=0.2 |Frictional| 
+| Axial part connections |Frictional $\mu$=0.2 |Frictional between NAS-bolt and Nut| 
+| Radial part connections |Frictionless |Radially to mating parts w.r.t. NAS-bolt| 
+| Fasteners |Ø6 Beams |Rigid Beams for all fasteners |  
+: Generic boundary conditions for the Static-Structural Analysis
 
-# 5. Conclusion  
+### Results: Deformation  
+![GMA global Total Deformation - 22.5kN Thrust Load - pitch 0°/yaw 0°](<../figures/FEM_deformation_thrust load.png>){width=100%}  
+
+![GMA local Total Deformation - 22.5kN Thrust Load - pitch 0°/yaw 0°](<../figures/FEM_deformation_thrust load2.png>){width=100%}  
+
+### Results: Stresses  
+![GMA global von Mises Stresses - 22.5kN Thrust Load - pitch 0°/yaw 0°](../figures/FEM_stress_thrustload_global.png){width=100%}
+
+![GMA Lug Head and Clevis von Mises Stresses - 22.5kN Thrust -pitch 0°/yaw 0°](../figures/FEM_stress_thrustload_clevis_lug.png){width=100%}  
+
+![Spacer/Bushing and Bolt/Nut von Mises Stresses - 22.5kN Thrust -pitch 0°/yaw 0°](../figures/FEM_stress_thrustload_bolt_spacers.png){width=100%}  
+
+### Results: Contact  
+![GMA global Contact Status - 22.5kN Thrust Load - pitch 0°/yaw 0°](../figures/FEM_contact_thrustload_status.png){width=100%} 
+
+![GMA global Contact Friction Stresses - 22.5kN Thrust Load - pitch 0°/yaw 0°](<../figures/FEM_contact_thrustload_fr stress.png>){width=100%} 
+
+### Results: Fasteners  
+
+![GMA Clevis Head Fasteners Reaction Forces](../figures/FEM_fasteners_clevis.png){width=100%}  
+
+![GMA Lug Head Fasteners Reaction Forces](../figures/FEM_fasteners_lug.png){width=100%}  
+
+| **Fastener** | **Preload [kN]** | **Torque [Nm]** | 
+|---|---|---|
+| ISO4017-M6x16-A4-70 |6850|**???** |
+| ISO4017-M6x16-A4-70 |6850|**???**|
+| ISO4017-M6x25-A4-70 |6850|**???**|
+
+
+### GMA - pitch ???°, yaw ???°
+#### Results: Deformation
+#### Results: Stresses
+#### Results: Contact
+#### Results: Fasteners
+
+
 
 
 # 6. Annex  
@@ -221,7 +252,7 @@ The FE-modeling assumptios are to be detailed and correlated in further justific
 ## 6.1. Tolerance Stack Analyis  
 ![Tolerance stack-up - Anti-Roll Feature to Clevis](<../figures/GMA_tolerance_anti roll.png>)(width=80%)
 
-![Tolerance stack-up - Lug offset(<../figures/GMA_tolerance_lug offset.png>)(width=80%)
+![Tolerance stack-up - Lug offset](<../figures/GMA_tolerance_lug offset.png>)(width=80%)
 
 ![Tolerance stack-up - Clearance of Bushing](<../figures/GMA_tolerance_bushing clearance.png>)(width=80%)
 
