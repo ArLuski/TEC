@@ -51,23 +51,23 @@ It contains the overall Manufacturing, AIT activities, suggestions for associate
 
 ## 1.2. Reference  
 
-[RD1] Gimbal Mount Assembly - Definition File / Version 001  
+[RD01] Gimbal Mount Assembly - Definition File / Version 001  
 
-[RD2] Gimbal Mount Assembly - Interface Control Document / Version 001  
+[RD02] Gimbal Mount Assembly - Interface Control Document / Version 001  
 
-[RD3] Data Sheet - ARMCO 17-4PH / 2022  
+[RD03] Data Sheet - ARMCO 17-4PH / 2022  
 
-[RD4] Instructions for Double Anvil Spherical Bearing Swaging Tool #10 Wide / Pegasus Auto Racing Supplies, Inc.  
+[RD04] Instructions for Double Anvil Spherical Bearing Swaging Tool #10 Wide / Pegasus Auto Racing Supplies, Inc.  
 
-[RD5] Bearing Installation and Retention by Swaging or Staking / AIA - NAS0331 / 2013  
+[RD05] Bearing Installation and Retention by Swaging or Staking / AIA - NAS0331 / 2013  
 
-[RD6] NASA Reference Publication 1228 - Fastener Design Manual / Richard T.Barrett / 1990  
+[RD06] NASA Reference Publication 1228 - Fastener Design Manual / Richard T.Barrett / 1990  
 
-[RD7] Nyx Moon - Huracan Development Logic / TEC-FRA-DOC-2024-01004 / Issue 02  
+[RD07] Nyx Moon - Huracan Development Logic / TEC-FRA-DOC-2024-01004 / Issue 02  
 
-[RD8] Gimbal Mount Assembly - Justification File/ Version 001  
+[RD08] Gimbal Mount Assembly - Justification File/ Version 001  
 
-[RD9] Structural Design and Test Factors of Safety For Spaceflight Hardware / NASA-STD-5001B / Change 3 /
+[RD09] Structural Design and Test Factors of Safety For Spaceflight Hardware / NASA-STD-5001B / Change 3 /
 
 [RD10] Gimbal Mount Assembly - Preliminary Verification Control Document / Version 001  
 
@@ -137,7 +137,7 @@ Insert the Bushing (5) through the larger Clevis bore from the opposite side. Pu
 
 When the Spacer, Lug Head subassembly, and Bushing are aligned, insert the NAS-bolt (6) from the Bushing side. Install the Castellated Nut (7) on the opposite side.  
 
-The NAS-bolt (6) is then tighted by hand with the Castellated Nut (7) on the opposite, outer side of the GMA Clevis Head (9). After a hand-tight preload between the Bolt and Nut, the Nut´s preload is then increased until the next slot of the nut aligns with the drilled hole of the bolt. This final applied torque is to be recorded.   
+The NAS-bolt (6) is then tightened by hand with the Castellated Nut (7) until zero-clearance is established between the stacked parts. After it is ensured that no clearance exists between all stacked parts, the Nut´s preload is then increased by 17 Nm +/-2 Nm. The final torque is reached, when the next slot of the Castellated Nut aligns with the drilled hole of the NAS-bolt in order to lock the thread with the Cotter Pin (8). This final applied torque is to be recorded.   
 
 After appliction of the torque, both parts shall be secured from loosening with the Cotter Pin (8). In accordane to NASA recommendations [RD6], the Cotter Pin shall be bended as illustrated in Figure 5.  
 
@@ -313,13 +313,15 @@ The MAIT-related objectives are primarily associated with the swaging of the sph
 The development testing shall also demonstrate that the swaging process secures the bearing in its intended position and that no additional proof testing is required to qualify the process.
 
 **Transient thermal mapping**  
-In relation to requirements REQ-020 and REQ-021 [RD10], the objective is to determine whether thermal loads reach the load-transmitting interfaces that permit relative motion and, if so, when they arrive and what temperature levels are reached.  
+In relation to requirements REQ-020 and REQ-021 [RD10], the objective is to determine whether thermal loads reach the load-transmitting interfaces that permit relative motion and, if so, when they arrive and what temperature levels are reached. Also of high importance is that the chosen material 17-4PH - H900 exhibit limits w.r.t. sub-zero mechanical properties. Hence, while the ultimate and yield strength increases with decreasing temperature, the brittleness increases [RD03].  
 
 Thermocouples (TE) shall be used to measure the transient temperature response at relevant locations in the vicinity of the GMA joint. The results shall support the assessment of whether design modifications are required to account for thermal loading in subsequent tests.  
 
 The top view shown in Figure 11 depicts the GMA Lug Head connected to the Thrust Dome by hexagonal-head bolts. The Thrust Dome is, in turn, attached to the Injection Head (IH).  A minimum of four TE´s is recommended. The TE´s should be distributed around the GMA Lug Head flange, with one sensor positioned on each side, to monitor the temperature distribution within the flange plane.  
 
 ![GMA Lug Head - Position of Thermocouples](../WP3/figures/GMA_test_te.png){width=55%}  
+
+Among the temperature measurements on the GMA Lug Head, it is recommended to follow the same procedure on the Thrust Dome as this part is expected to be exposed to low temperatures first. 
 
 **Bearing Condition Monitoring and Service-Life Assessment**  
 The objective is to monitor the condition of the *MS14103-10* Spherical Bearing throughout the engine test campaign and to determine whether it remains suitable for continued use. Ideally, the initial condition of the bearing shall be recorded before the first test and reassessed after each test sequence. However, the inspection intervals shall be coordinated with the other engine test objectives and the schedule and cost constraints of the test campaign, as additional measurement activities may increase test turnaround time and reduce the time available for testing.   
@@ -345,12 +347,12 @@ During the bearing-wear inspections described above, the grip section of the NAS
 
 | **Objective**| **Sucess criteria** | **Comment** | 
 | ------ | ----- |----- |
-| Thermal mapping |delta_T~10 °C| delta_T=T_ambient - T_sensor|
-| Wear of Spherical Bearing |max. delta_s=0.1 mm|value before and after testing |
+| Thermal mapping | $\Delta$T~10 °C|  $\Delta$T=T_ambient - T_sensor|
+| Wear of Spherical Bearing |max. $\Delta$ s=0.1 mm|value before and after testing | 
 | Wear of Bolt, Spacer, Bushing, GMA Lug Head bores |no wear|wear not permissible|
 : Sucess criteria for GMA development tests  
 
-The approximate temperature difference of delta_T~10 °C is intended as an rough indicator during extended hot-fire testing that the GMA Lug Head bore is approaching temperatures at which thermally induced mechanical effects may become significant. This value may also be used to define a test redline, allowing the test to be stopped before thermal contraction causes complete blockage or seizure of the GMA.  
+The approximate temperature difference of  $\Delta$T~10 °C is intended as an rough indicator during extended hot-fire testing that the GMA Lug Head bore is approaching temperatures at which thermally induced mechanical effects may become significant. This value may also be used to define a test redline, allowing the test to be stopped before thermal contraction causes complete blockage or seizure of the GMA.  
   
 ## 6.4. Qualification Test  
 
