@@ -73,7 +73,11 @@ This document presents the Design Justification File for the Gimbal Mount Assemb
 
 [RD10] Gimbal Mount Assembly - Manufacturing, Assembly, Integration and Test Plan / Version 001  
 
-[RD11] Data Sheet - ARMCO 17-4PH / 2022
+[RD11] Data Sheet - ARMCO 17-4PH / 2022  
+
+[RD12] Nyx Moon - Mechanical Design Rules / TEC-FRA-DOC-2026-01026 / Issue 1  
+
+[RD13] Space engineering - Threaded fasteners handbook / ECSS-E-HB-32-23A Rev.1 / 2023
 
 
 \clearpage
@@ -141,7 +145,7 @@ This value represents the maximum relative nut advance after seating. It shall n
 
 When an adjustment of 0.235 mm is applied in the ANSYS bolt-pretension model, the calculated preload is 63.4 kN. This result includes the modeled stiffness and contact behaviour of the bolt and clamped components but does not account for installation scatter, embedment, relaxation etc. 
 
-The analysis with a friction coefficient of 0.2 for the stacked surfaces indicates that this preload significantly changes the lateral load path. Like Figure 4 demonstrates under thrust load (here 22.5 kN), a substantial portion of this load is transfered through friction rathern than through the intended bolt, bearing-inner-member, and clevis-hole contact path. Figure 5 shows the consequences of the preload directly mirrored by von Mises Stresses. The values are for relative comparison only as the mesh might be too coarse to assess absolute values. In total it can be demonstrated, that the deformation shape of the NAS-bolt and adjacent parts remains mostly. Considering the von Mises Stresses it is evident, that Spacer, Bushing and NAS-bolt exhibit a significant increase in stresses. Also, the scaled deformation shows how the frictional forces introduce a bending load particularily for the Bushing and Spacer. 
+The analysis with a friction coefficient of 0.2 for the stacked surfaces indicates that this preload significantly changes the lateral load path. Like Figure 4 demonstrates under thrust load (here 22.5 kN), a substantial portion of this load is transfered through friction rathern than through the intended bolt, bearing-inner-member, and clevis-hole contact path. Figure 5 shows the consequences of the preload directly mirrored by von Mises stresses. The values are for relative comparison only as the mesh might be too coarse to assess absolute values. In total it can be demonstrated, that the deformation shape of the NAS-bolt and adjacent parts remains mostly. Considering the von Mises stresses it is evident, that Spacer, Bushing and NAS-bolt exhibit a significant increase in stresses. Also, the scaled deformation shows how the frictional forces introduce a bending load particularily for the Bushing and Spacer. 
 
 ![Frictional Stresses with/without preload of NAS-bolt](<../figures/FEM_NASbolt preload friction stress.png>){width=85%}  
 
@@ -153,6 +157,9 @@ In summary, the **minimum torque is to be chosen so that axial play is eliminate
 
 
 # 3. Thermal Analysis  
+
+For the thermal analyis, *ANSYS Workbench 2024 R2* is utilized. The results and related conclusions and comments are presented subsequently.
+
 ## 3.1. Results    
 
 A transient thermal analysis was performed to support the definition of component tolerances specified in the Definition File [RD02] and to reduce the thermal-development risks associated with the main functional requirements of the GMA [RD01] and the *Oneiros* system requirements [RD08].  
@@ -170,9 +177,6 @@ As part of the preliminary GMA development, a transient thermal model was establ
 The calculated temperature distributions after mission durations of 60 s for *Oneiros* and up to 500 s for Terminal Moon are shown in **Figure 7**.  
 
 ![Results of Thermal Transient Analysis for 60 s and 500 s](<../figures/FEM_thermal transient.png>){width=50%}  
-
-\clearpage
-## 3.2. Conclusion  
 
 A hot-fire duration of 60 s is planned for the *Oneiros* demonstrator [RD08]. The transient thermal-analysis results shown in **Figure7** indicate that, for this duration, no significant temperature gradients are expected in the GMA region containing components subject to relative motion, including the Spherical Bearing and NAS-bolt. 
 
@@ -193,14 +197,22 @@ For the current GMA configuration and the short-duration of the *Oneiros* test, 
 The FE-modeling assumptios are to be detailed and correlated in further justification loops by temperature measurements as recommended in the Manufacturing, Assembly, integration and Test Plan (MAIT) [RD10]. 
 
 # 4. Mechanical Analysis  
+The mechanical analysis was performed using *ANSYS Workbench 2024 R2*. The results, together with the corresponding conclusions and comments, are presented in the following sections.  
 
-## Static-Structural: GMA - pitch 0°, yaw 0°  
-The ungimbaled configuration demonstrates the neutral position of the GMA. Generic boundary conditions that are considered in this analysis can be seen in **Table ???**. A detailed description of the boundaries is attached in the Annex. 
+A static structural finite element analysis was conducted for several pitch and yaw angle configurations. The purpose of evaluating these configurations was to identify potential mechanical risks associated with different gimbal positions, as illustrated in **Figure???**.  
+
+![Static-Structural FE-Model configurations](<../figures/GMA_FEM configurations.png>){width=90%}  
+
+A comparison of the simulation results showed that the overall stress and deformation levels remain low for all investigated configurations. Therefore, the configuration with pitch and yaw angles of 0 °, representing the neutral position, is used as the primary reference case in this document.  
+
+Selected components are evaluated separately where their loading or stress distribution depends significantly on the gimbal angle. Since the GMA is not expected to be subjected to launch-induced acceleration yet, the analysis presented in this chapter focuses primarily on the thrust load generated by the engine. Additional results for the neutral configuration are provided in the Annex. More detailed results are available in the simulation files included with this deliverable.  
+
+## Static-Structural: GMA - pitch 0°, yaw 0° - Thrust Load
+The ungimbaled configuration describes the neutral position of the GMA for pitch and yaw and 0°. Generic boundary conditions that are considered in this analysis can be seen in **Table ???** followed by the presentation of results. A detailed description of the boundaries is attached in the Annex. The results shown are related to the load case, where the GMA is subjected to the thrust load as this is the prioritized load scenario for the on-Earth demonstration. Nevertheless, a theoretical vehicle acceleration is included in the load cases and can be extracted in the delivered data package. 
 
 | **Mechanical Boundary** | **Expression** | **Comment** | 
 |---|---|---|
 | Mechanical thrust load| 22.5 kN | 1.5*15 kN under vacuum |
-| Vehicle Acceleration |-11.8 kN |30 * 9.816 m/s^2 * 40 kg |
 | Mechanical Fixation |Fixed support |All degrees of freedom locked|
 | Main flange connections |$\mu$=0.2 |Frictional| 
 | Axial part connections |Frictional $\mu$=0.2 |Frictional between NAS-bolt and Nut| 
@@ -208,48 +220,115 @@ The ungimbaled configuration demonstrates the neutral position of the GMA. Gener
 | Fasteners |Ø6 Beams |Rigid Beams for all fasteners |  
 : Generic boundary conditions for the Static-Structural Analysis
 
+### Results: Contact  
+
+Chosen contact results are shown in this chapter. 
+
+![GMA global Contact Status - 22.5kN Thrust Load - pitch 0°/yaw 0°](../figures/FEM_contact_thrustload_status.png){width=100%}  
+
+The contact status shown in **Figure ???** demonstrates where sliding occurs due to initiation of the thrust load in the FE-model. Among the deformation results of the GMA and the reaction forces demonstrated in **Figure ??? Annex**, this plot underlines the positive plausibility of this model.  
+
+![GMA global Contact Friction Stresses - 22.5kN Thrust Load - pitch 0°/yaw 0°](<../figures/FEM_contact_thrustload_fr stress.png>){width=100%}  
+
+The frictional stresses (**Figure ???**) also show, that the quasi-static thrust load of 22.5 kN exceeds the pretension of the NAS-bolt (6 kN), which results in sliding and max. frictional stresses of approximately 35 MPa. 
+
 ### Results: Deformation  
+
+The deformation results of the GMA analysis for a quasi-static thrust loa dof 22.5 kN are shown below.
+
 ![GMA global Total Deformation - 22.5kN Thrust Load - pitch 0°/yaw 0°](<../figures/FEM_deformation_thrust load.png>){width=100%}  
 
 ![GMA local Total Deformation - 22.5kN Thrust Load - pitch 0°/yaw 0°](<../figures/FEM_deformation_thrust load2.png>){width=100%}  
 
+The global deformation is predominantly oriented in the positive x-direction. The deformation pattern is symmetric in the x–z plane, whereas a rotation about the z-axis can be observed in the x–y plane. This behavior is assumed to result from the different bore geometries of the GMA Lug Head, which distribute the load transmitted through the NAS-bolt.
+
+Considering the modeled contact between the inner and outer races of the Spherical Bearing, as described in **Chapter ???**, the relative total deformation at the location of minimum clearance between the Clevis Head and the Lug Head is approximately 0.1 mm, as shown in **Figure???**.
+
+The bonded-contact definition between the inner and outer bearing races represents a modeling simplification. The PTFE-fabric liner is expected to have a lower stiffness than assumed in the present analysis. Consequently, a greater relative deformation in the x-direction between the Lug Head and the Clevis Head is expected in the actual assembly.
+
 ### Results: Stresses  
+
+The figures below show the von Mises Stresses from the global GMA component up to its single parts. 
+
 ![GMA global von Mises Stresses - 22.5kN Thrust Load - pitch 0°/yaw 0°](../figures/FEM_stress_thrustload_global.png){width=100%}
 
 ![GMA Lug Head and Clevis von Mises Stresses - 22.5kN Thrust -pitch 0°/yaw 0°](../figures/FEM_stress_thrustload_clevis_lug.png){width=100%}  
 
 ![Spacer/Bushing and Bolt/Nut von Mises Stresses - 22.5kN Thrust -pitch 0°/yaw 0°](../figures/FEM_stress_thrustload_bolt_spacers.png){width=100%}  
 
-### Results: Contact  
-![GMA global Contact Status - 22.5kN Thrust Load - pitch 0°/yaw 0°](../figures/FEM_contact_thrustload_status.png){width=100%} 
+The highest stresses occur locally at the inner edges of the Clevis Head bores and are caused by the clearance fits between the assembled parts, namely the NAS-bolt and the Bushing. The maximum von Mises stress remains below 405 MPa. Since this stress peak is highly localized, the calculated value is more than 50 % below the yield strength of the specified 17-4PH-H900 material at ambient temperature.
 
-![GMA global Contact Friction Stresses - 22.5kN Thrust Load - pitch 0°/yaw 0°](<../figures/FEM_contact_thrustload_fr stress.png>){width=100%} 
+The scaled deformation results also show qualitatively that the asymmetric design of the Clevis HJead leads to different stiffnesses of the two clevis ears through which the thrust load is transmitted. In the x–y plane, the left ear deforms further inward in the negative y-direction, whereas the right ear remains nearly undeformed. This difference in stiffness is also reflected in the stress distribution, with higher stresses occurring on the inner side of the left ear due to bending induced by the NAS-bolt.  
 
-### Results: Fasteners  
+## Static-Structural: Chosen parts - Thrust Load  
+
+In this chapter, FE-results are shown from chosen parts at specific gimbal angels other then the neutral position at pitch and yaw at 0 °.
+
+This section presents the finite element results for selected components at specific gimbal-angle configurations other than the neutral position, defined by pitch and yaw angles of 0 °.
+
+**Figure???** shows the directional deformation for a gimbaled configuration with a pitch angle of 12 ° and a yaw angle of -12 °. In this load case, the relative deformation between the GMA Lug Head Anti-Roll Feature and the inner surface of the clevis-head ear is highest compared to the other FE-Models with approximately 0.16 mm.  
+
+![GMA Deformation in y-axis - 22.5kN Thrust Load - pitch 12°/yaw -12°](<../figures/GMA_direct deformation_p12_y-12.png>){width=80°}
+
+Due to the extreme deflection of the Lug Head, the a bigger area of the *weaker* Clevis Head Ear is subjected to higher bending stresses as can be seen in **Figure???**. The maximum stresses remain in edge areas of the Clevis Head, similarly to the ungimbaled FE-Model.
+
+![GMA Clevis Head von Mises Stresses - 22.5kN Thrust Load - pitch 12°/yaw -12°](../figures/GMA_Clevis_stress_p12_y-12.png){width=80%}  
+
+The Clevis Lug Head in the figure below exhibits a gimbal-angle independent stress distribution. However, the absolute von Mises stress level may increase as exemplarily shown below. The stress peaks location remains. 
+
+![GMA Lug Head von Mises Stresses - 22.5kN Thrust Load - pitch 12°/yaw -12°](../figures/GMA_Lug_stress_p12_y-12.png){width=80%}  
+
+**Figure ???** visualizes the von Mises Stresses of the Bushing and Spacer. This gimbal angle loads the parts most. For the Bushing and Spacer in particular it can be said, that the location of the pressure ellipse changes only slightly with changing pitch and yaw manouvers. 
+
+![GMA Bushing, Spacer von Mises Stresses - 22.5kN Thrust Load - pitch 12°/yaw -12°](../figures/GMA_Bushing_Spacer_stress_p12_y-12.png){width=80°}  
+
+Overall, the FE-Modell 4 (**Figure???**) exhibits slightly higher stresses compared to the nominal results presented in **Section???**. Still, with stress levels more than 50 % below the materials yield strength, the GMA is considered to be desgined conservative from a static-stractural point of view. 
+
+## Static-Structural: Fasteners  
+
+### Results: Fasteners Force Reaction
+
+This section presents the reaction forces of the fasteners connecting the GMA to the Thrust Frame Beams on the upper, vehicle-side interface and to the Thrust Dome on the lower, engine-side interface. Prior to the application of the external load, all bolts are preloaded to 6 850 N, as shown in **Figure ??** in the Annex. **Figure ??** and **Figure ??** present the reaction forces after application of the Thrust Load. The FE-model from which the subsequent reaction forces demonstrated are based on a ungimbaled configuration (pitch and yaw at 0°). Further results in other gimbal configurations are attached in the Annex.
 
 ![GMA Clevis Head Fasteners Reaction Forces](../figures/FEM_fasteners_clevis.png){width=100%}  
 
+In **Figure ??** axial forces remain almost unchanged compared with the initial preload condition without external loading. As expected, shear forces are also present. Fasteners #7 to #16, which are oriented in the y–z plane, exhibit shear forces approximately 100 N higher than those acting on the perpendicularly oriented fasteners #1 to #6. This is plausible because fasteners #7 to #16 carry a larger proportion of the Thrust Load. The shear forces acting on fasteners #1 to #6 result from the inclined geometry of the Thrust Frame Beams and are therefore consistent with the expected structural behavior.  
+
 ![GMA Lug Head Fasteners Reaction Forces](../figures/FEM_fasteners_lug.png){width=100%}  
 
-| **Fastener** | **Preload [kN]** | **Torque [Nm]** | 
-|---|---|---|
-| ISO4017-M6x16-A4-70 |6850|**???** |
-| ISO4017-M6x16-A4-70 |6850|**???**|
-| ISO4017-M6x25-A4-70 |6850|**???**|
+The fasteners connecting the Lug Head to the Thrust Dome exhibit an additional axial load of up to 88 N in bolts #18, #19, #22, and #23 compared with the initial preload of 6,850 N. This superimposed tensile load results from differences in stiffness and the associated deformation of the central Lug Body that accommodates the Spherical Bearing. Following application of the Thrust Load, bending of the central Lug Body generates a pulling force in these bolts.  
+
+Shear forces are significantly higher compared to the GMA Clevis Head - Thrust Frame Beam interface. As the scaled deformation plots show above (see **Figure xy**), the shear forces are expected to be introduced by bending of the Lug Head flange. To mention here is that these shear forces should be supported by the dowel pins, that are not mapped in the FE-model.  
+
+### Results: Fasteners Margin of Safety  
+
+The justification for the fasteners computed in this document are based on [RD13], while Safety and Design Factors are derived from [RD12]. For the calculation of the Margin of Safey (MOS), following assumptions for the fasteners are considered:
+
+- SF_yield: 1.2 * 1.2 * 1.25=1.8 ( Model Factor, Project Factor, Yield Factor for fastener)  
+- SF_ultimate: 1.2 * 1.2 * 1.55=2.2 ( Model Factor, Project Factor, Ultimate Factor for fastener)  
+- SF_separation: 1.2 * 1.2 * 1.4=2.0 ( Model Factor, Project Factor, Separation factor for fastener)  
+- SF_sliding: 1.2 * 1.2 * 1.4=2.0 ( Model Factor, Project Factor, Sliding factor for fastener)  
+
+The calculation is executed with the TEC-internal Tool *BOLTEC*.  
+
+**MOS**  
+The MOS is computed for one representative loaded bolt of each interface. The GMA counts three interfaces in total: GMA Lug Head and Thrust Dome, GMA CLevis Head and Thrust Frame Beams (horizontal and vertical fastener orientation). 
+
+The reaction forces of all fasteners are shown in **Figure???** for all investigated gimbaled orientation between Lug Head and Clevis Head. For a conservative justification of all interfaces, the max. axial pulling force and its related shear force is extracted and verified by analysis. Pushing forces that relax the bolt preload are not greater then 130 N due to the stiff interfaces. This absolute value is smaller then 5 % of the initial M6-pretension. This relatively small value gives evidence that no loosening or failure by shear load is expected by a fastener. Nevertheless, to highlight is that the extracted shear reaction forces exhibit a max. values of 717 N (e.g. pitch/yaw at 12°/0°). These values are to be treated with care as no Dowel Pins are considered in the FE-preprocessing. In reality, shear loads shall be carried by the Dowel Pins on the first place, before threaded fasteners are significantly subjected to shear.  
 
 
-### GMA - pitch ???°, yaw ???°
-#### Results: Deformation
-#### Results: Stresses
-#### Results: Contact
-#### Results: Fasteners
+**Torques**
 
-
-
+| **Interface**| **Fastener configuration** | **Fastener** | **Torque [Nm]** | 
+|---|---|---|---|
+|GMA Lug Head - Thrust Dome|Threaded through hole|ISO4017-M6x16-A4-70 |**7.2**|
+|GMA Clevis Head - Thrust Frame Beams|Bolt-Washer-Nut pairing| ISO4017-M6x25-A4-70 |**7.2**|
+|GMA Clevis Head - Thrust Frame Beam|Threaded through hole| ISO4017-M6x16-A4-70 |**9**|
+: Torques for pretension of fasteners  
 
 # 6. Annex  
 
-## 6.1. Tolerance Stack Analyis  
+## Tolerance Stack Analyis  
 ![Tolerance stack-up - Anti-Roll Feature to Clevis](<../figures/GMA_tolerance_anti roll.png>)(width=80%)
 
 ![Tolerance stack-up - Lug offset](<../figures/GMA_tolerance_lug offset.png>)(width=80%)
@@ -258,11 +337,64 @@ The ungimbaled configuration demonstrates the neutral position of the GMA. Gener
 
 ![Tolerance stack-up - Bolt thread to Clevis](<../figures/GMA_tolerance_bolt thread-clevis.png>)(width=80%)  
 
-## 6.2. NAS-bolt torque calculation
+## Boundary Conditions Thermal Analysis  
 
-## 6.3. Boundary Conditions Thermal Analysis 
+![Thermal Transient Analysis - Contact Definition](<../figures/FEM_bc_contacts thermal.png>)(width=80%)  
 
-## 6.4. Boundary Conditions Static Structural Analysis  
+![Thermal Transient Analysis - Mesh](<../figures/FEM_bc_mesh thermal.png>)(width=80%)  
+
+![Thermal Transient Analysis - Thermal Load](<../figures/FEM_bc_load thermal.png>)(width=80%)  
+
+![Thermal Transient Analysis - Analysis Settings](<../figures/FEM_bc_analysis settings thermal.png>)(width=80%)  
+
+## Boundary Conditions Static Structural Analysis  
+
+![Static-Structural Analysis - Contact Definition](../figures/FEM_bc_contacts.png){width=100%}   
+
+![Static-Structural Analysis - Details of Beams/Fasteners](../figures/FEM_bc_fasteners_beams.png){width=100%}  
+
+![Static-Structural Analysis - Fixed support and Reaction Forces](../figures/FEM_bc_fixation.png){width=100%}    
+
+![Static-Structural Analysis - Mesh](../figures/FEM_bc_mesh.png){width=100%}    
+
+![Static-Structural Analysis - Mesh Details](<../figures/FEM_bc_mesh details.png>){width=100%}  
+
+![Static-Structural Analysis - Load Definition](../figures/FEM_bc_load.png){width=100%}  
+
+![Static-Structural Analysis - NAS-Bolt Preload](<../figures/FEM_bc_NASbolt preload.png>){width=100%}   
+
+![Static-Structural Analysis - Flange Fasteners Preload](<../figures/FEM_bc_fasteners preload.png>){width=100%}    
+
+![Static-Structural Analysis - Analysis Settings](<../figures/FEM_bc_analysis settings.png>){width=100%}   
+
+## Static-Structural: Fasteners Force Reactions  
+
+![GMA - Reaction Forces - different gimbal angles 1_2](<../figures/GMA_fastener reaction 1_2.png>){width=100%}   
+
+![GMA - Reaction Forces - different gimbal angles 2_2](<../figures/GMA_fastener reaction 2_2.png>){width=100%}  
+
+
+## Static-Structural: GMA - pitch 0°, yaw 0° - Acceleration Load  
+
+![GMA global Total Deformation - Acceleration Load - pitch 0°/yaw 0°](../figures/FEM_deformation_acceleration.png){width=100°}  
+
+![GMA Lug Head and Clevis von Mises Stresses - Acceleration Load  -pitch 0°/yaw 0°](../figures/FEM_stress_acceleration_clevis_lug.png){width=100°}  
+
+![Spacer/Bushing and Bolt/Nut von Mises Stresses - Acceleration Load -pitch 0°/yaw 0°](../figures/FEM_stress_acceleration_bolt_spacers.png){width=100°}  
+
+## Static-Structural: Thrust Dome / Beams - Thrust Load 
+
+![Thrust Dome von Mises Stresses - Thrust Load - different gimbal angles](<../figures/FEM_stress_thrust load_thrust dome.png>){width=100°}  
+
+![Thrust Frame Beams von Mises Stresses - Thrust Load - different gimbal angles](<../figures/FEM_stress_thrust load_Thrust beams.png>){width=100°}  
+
+## Static-Structural: Thrust Dome / Beams - Acceleration Load  
+
+![Thrust Dome von Mises Stresses - Acceleration Load - pitch 0°/yaw 0°]](<../figures/FEM_stress_acceleration_thrust dome.png>){width=100°}  
+
+![Thrust Frame Beams von Mises Stresses - Acceleration Load - pitch 0°/yaw 0°](<../figures/FEM_stress_acceleration_thrust beams.png>){width=100°}   
+
+
 
 # 7. Acronym List  
 The acronyms used in this document are listed below.  
@@ -273,5 +405,5 @@ The acronyms used in this document are listed below.
 |GNC|Guidance Navigation Control|
 |GMA|Gimbal Mount Assembly|
 |IH|Injection Head|
-|MAIT|Manufacturing, Assembly, integration and Test|
-
+|MAIT|Manufacturing, Assembly, Integration and Test|
+|MOS|Margin Of Safety|
