@@ -68,7 +68,7 @@ The Definition File serves as the identity card of the Gimbal Mount Assembly (GM
 
 # 2. GMA Overview  
 ## 2.1. Context to Engine System   
-The development logic of the Huracan engine system, as presented during the Preliminary Design Review (PDR), features a rigid thrust structure that interfaces the main engine with the vehicle [RD1]. Based on this logic, GNC maneuvers were originally intended to be performed by a Reaction Control System (RCS).
+The development logic of the Huracan engine system, as presented during the Preliminary Design Review (PDR), features a rigid thrust structure that interfaces the main engine with the vehicle [RD01]. Based on this logic, GNC maneuvers were originally intended to be performed by a Reaction Control System (RCS).
 
 For the on-Earth demonstrator *Oneiros*, which shall be driven by the Huracan engine, pitch and yaw control is planned to be realized by a Thrust Vector Control (TVC) system. The TVC system steers the vehicle by physically pivoting, or gimballing, the main engine in order to vector the thrust. Therefore, the main mechanical components of the TVC system are the GMA and two actuators. 
 
@@ -83,17 +83,17 @@ The main role of the GMA is to provide the structural and kinematic connection b
 
 The GMA does not directly generate thrust, specific impulse, or combustion performance. However, it is strongly influenced by engine-level performance and configuration, since these parameters define the loads, deflections, actuator forces, alignment requirements, and environmental conditions that the assembly must withstand.
 
-The GMA shall therefore be considered as an interface and primary mechanical load-path component between the engine and the vehicle. It transmits nominal thrust loads of 15 kN in vacuum and 10 kN under atmospheric conditions. In addition to transmitting the nominal loads, the GMA shall provide an operational gimbal capability of ±10° per axis in pitch and yaw. Further requirements are shown in the Requirement Consolidation [RD2].
+The GMA shall therefore be considered as an interface and primary mechanical load-path component between the engine and the vehicle. It transmits nominal thrust loads of 15 kN in vacuum and 10 kN under atmospheric conditions. In addition to transmitting the nominal loads, the GMA shall provide an operational gimbal capability of ±10° per axis in pitch and yaw. Further requirements are shown in the Requirement Consolidation [RD02].
 
 # 3. GMA Design Definition
 
 ## 3.1. Assembly Architecture & Design Philosophy 
 
-Breaking down the engine assembly to focus on the GMA and its directly adjacent parts, the figure below shows the GMA connected to the Thrust Dome at the bottom and the Thrust Frame Beams above. The Thrust Dome and Thrust Frame Beams are shown transparently because they are outside the scope of this development. Nevertheless, design recommendations for these components are provided in a subsequent chapter. 
+Breaking down the engine assembly to focus on the GMA and its directly adjacent parts, Figure 2 shows the GMA connected to the Thrust Dome at the bottom and the Thrust Frame Beams above. The Thrust Dome and Thrust Frame Beams are shown transparently because they are outside the scope of this development. Nevertheless, design recommendations for these components are provided in a subsequent chapter. 
 
 ![GMA architecture](<../figures/GMA architecture.png>){width=60%}  
 
-The design philosophy is aligned with the trade-off criteria described in [RD3]. To achieve a GMA design that is *safe, simple, and achievable*, the primary objectives are to minimize the number of parts and maximize the use of commercial off-the-shelf (COTS) parts. As a result, the final GMA design consists of eight parts: four COTS parts and four custom-made parts. The following figure shows the COTS parts used in the GMA.
+The design philosophy is aligned with the trade-off criteria described in [RD03]. To achieve a GMA design that is *safe, simple, and achievable*, the primary objectives are to minimize the number of parts and maximize the use of commercial off-the-shelf (COTS) parts. As a result, the final GMA design consists of eight parts: four COTS parts and four custom-made parts. Figure 3 shows the COTS parts used in the GMA.
 
 Machined parts manufactured in accordance with military and aerospace standards were selected as COTS parts because of their guaranteed material properties, tight tolerances, and controlled manufacturing and inspection processes. The use of imperial units is accepted for some parts in this project because they can be sourced more quickly and at a lower cost.  
 
@@ -101,11 +101,11 @@ Machined parts manufactured in accordance with military and aerospace standards 
 
 ## 3.2. Part Breakdown, Materials and Mass
 
-The image and the subsequent table illustrate the parts and their designated materials in isometric and cross-sectional views.
+Figure 4and the Table 1 illustrate the parts and their designated materials in isometric and cross-sectional views.
 
-The GMA forms a double-shear clevis joint in which the GMA Lug Head supports the staked outer race of a self-lubricating Plain Bearing. The Bearing inner race is centered within the GMA Clevis Head by a Spacer and clamped against the Bushing by the preload of the NAS-bolt. A castellated nut contacts the outer surface of the GMA Clevis Head, while a Cotter Pin prevents the nut from loosening and maintains the axial position of the stacked components.
+The GMA forms a double-shear clevis joint in which the GMA Lug Head supports the swaged outer race of a self-lubricating Spherical Bearing. The bearing inner race is centered within the GMA Clevis Head by a Spacer and clamped against the Bushing by the preload of the NAS-bolt. A castellated nut contacts the outer surface of the GMA Clevis Head, while a Cotter Pin prevents the nut from loosening and maintains the axial position of the stacked components.
 
-The two Clevis Ears interface with the NAS-bolt on one side and the GMA Bushing on the other. Their bores have different diameters and clearance fits to ensure controlled seating and clamping of the axially stacked components while maintaining the centered position of the GMA Lug Head between the Clevis Ears.  
+The two Clevis ears interface with the NAS-bolt on one side and the GMA Bushing on the other. Their bores have different diameters and clearance fits to ensure controlled seating and clamping of the axially stacked components while maintaining the centered position of the GMA Lug Head between the Clevis Ears.  
 
 The “U” suffix in the NAS-bolt designation identifies the available passivated finish. This finish is driven by market availability and is not functionally required by the assembly.  
 
@@ -119,12 +119,12 @@ The “U” suffix in the NAS-bolt designation identifies the available passivat
 | 4 | 3423/01   |Bolt NAS6710DU29             |A286             |0.1316 |
 | 5 | 3437/01   |Nut MS9358-16                |A286             |0.0386 |
 | 6 | 126707/01 |GMA Spacer                   |17-4PH - H900    |0.0003 |
-| 7 | 19156/01  |Bearing MS14103-10           |330C / 17-4PH    |0.1089 |
+| 7 | 19156/01  |Spherical Bearing MS14103-10 |330C / 17-4PH    |0.1089 |
 | 8 | 124890/01 |GMA Lug Head                 |17-4PH - H900    |0.381  |
 | **Total mass** |  | |  | **1.544** |
 : Total mass of main parts  
 
-Taking into account the additional bolts, washers, nuts, and pins, an additional CAD mass of 0.2 kg must be considered. The total mass is therefore approximately **1.7 kg**, which is **64 %** lower than the maximum mass specified in requirement [RD2]. Further details of the interface connections are provided in the GMA Interface Control Document (ICD) in [RD4].  
+Taking into account the additional bolts, washers, nuts, and pins, an additional CAD mass of 0.2 kg must be considered. The total mass is therefore approximately **1.7 kg**, which is **64 %** lower than the maximum mass specified in requirement [RD02]. Further details of the interface connections are provided in the GMA Interface Control Document (ICD) in [RD04].  
 
 ## 3.3. Tolerances and Fits
 
@@ -143,7 +143,7 @@ The selection of dimensional fits between mating cylindrical surfaces is governe
 # 4. Functional and mechanical characteristics 
 
 ## 4.1. Generic functional characteristics
-An overview of the functions of the main GMA parts is provided in the table below. The part numbers and designations correspond to those shown in Figure 4.
+An overview of the functions of the main GMA parts is provided in the Table 3. The part numbers and designations correspond to those shown in Figure 4.
 
 | **Number** | **Designation** | **Function** |
 |---|---|---| 
@@ -163,7 +163,7 @@ The GMA Lug Head and Clevis Head incorporate several specific mechanical feature
 
 ![Chosen Featurs of GMA Parts](<../figures/GMA features.png>){ width=60% }  
 
-The GMA Clevis Head consists of two Clevis Ears connected by a horizontal flange. A central rectangular **Vertical Support** carries transverse loads from the angled Thrust Frame Beams and provides four support surfaces spaced 90° apart for precise, independent attachment. Further details are specified in the ICD [RD4]. 
+The GMA Clevis Head consists of two Clevis Ears connected by a horizontal flange. A central rectangular **Vertical Support** carries transverse loads from the angled Thrust Frame Beams and provides four support surfaces spaced 90° apart for precise, independent attachment. Further details are specified in the ICD [RD04]. 
 
 The GMA Clevis Head contains two **Mechanical Stops** that limit the oscillation angle of the GMA Lug Head about the axis perpendicular to the NAS-bolt axis (z-axis; see Figure 2). These geometric features are intended to prevent the maximum permissible oscillation angle of the Bearing *MS14103-10* from being exceeded. The figure below illustrates the kinematic limit, with the GMA Lug Head tilted nominally by 12° relative to the GMA Clevis Head.
 
@@ -179,12 +179,12 @@ The GMA design uses two different **Clevis Bore Holes**. The smaller bore is in 
 As mentioned in the previous chapters, the GMA development does not include the interfacing parts on the engine side and the vehicle side. Nevertheless, since these parts have not yet been finalized and directly interface with the GMA, it is useful to present design suggestions from the perspective of the GMA development.
 
 **Thrust Frame Beam**  
-The GMA Clevis Head is designed to allow four separate structural members to be attached independently in a quadpod configuration. These Thrust Frame Beams are primarily intended to transmit the engine thrust into the vehicle structure. Their secondary function is to provide attachment points for additional components and instrumentation. The suggested dimensions of the I-beam are shown in the figure below. The chosen material is EN AW-7075 T6. 
+The GMA Clevis Head is designed to allow four separate structural members to be attached independently in a quadpod configuration. These Thrust Frame Beams (Figure 7) are primarily intended to transmit the engine thrust into the vehicle structure. Their secondary function is to provide attachment points for additional components and instrumentation. The suggested dimensions of the I-beam are shown in the figure below. The chosen material is EN AW-7075 T6. 
 
 ![Thrust Frame Beam dimensions](<../figures/Thrust Beam.png>){width=45%}  
 
 **Thrust Dome**  
-The main function of the Thrust Dome is to provide space to accommodate the IGS and its peripheral attachments, while also transmitting the total thrust and thermal loads from the IH to the GMA. It is designed as an axially symmetric body with radial cut-outs to provide space and accessibility for the IGS. The proposed material is 17-4PH - H900.
+The main function of the Thrust Dome (Figure 8) is to provide space to accommodate the IGS and its peripheral attachments, while also transmitting the total thrust and thermal loads from the IH to the GMA. It is designed as an axially symmetric body with radial cut-outs to provide space and accessibility for the IGS. The preliminarily proposed material is 17-4PH - H900.
 
 The main suggested dimensions are shown below. The centering feature is designed as a longitudinal groove in a configuration clocked at 90° intervals. The function of this groove is to precisely position the Thrust Dome on the IH with respect to the lateral axis and to define its clocking, while accounting for the thermal contraction of the mating male features, such as pins on the IH.
 
@@ -200,14 +200,14 @@ For the preliminary cost assessment, the custom-made parts were quoted through m
 | GMA Lug Head                |124890/01  |17-4PH - H900    |195|
 | GMA Bushing                 |126711/01  |17-4PH - H900    |40|
 | GMA Spacer                  |126707/01  |17-4PH - H900    |31|
-| Bearing MS14103-10          |19156/01  |330C/17-4PH       |50|
+| Bearing MS14103-10          |19156/01   |330C/17-4PH       |50|
 | Bolt NAS6710DU29            |3423/01    |A286             |50|
 | Castellated Nut MS9358-16   |3437/01    |A286             |88|
 | Cotter Pin MS24665-374      |3489/01    |AISI 302 or 304  |9|
 | **Total cost**              |           |                 |**736**|
 : Cost assessment  
 
-In addition to the estimated costs listed above, a dedicated staking tool is required to secure the outer race of the bearing in the GMA Lug Head. This tool costs approximately € 260. Additional quality-assurance costs for the manufactured parts are estimated at € 500. Therefore, the total estimated cost of one functional GMA unit, including tooling and quality-assurance expenses, is **€ 1,496**.
+In addition to the estimated costs listed above, a dedicated staking tool is required to secure the outer race of the bearing in the GMA Lug Head. This tool costs approximately € 260. Additional quality-assurance costs for the manufactured parts are estimated at € 500. 
 
 \clearpage
 
