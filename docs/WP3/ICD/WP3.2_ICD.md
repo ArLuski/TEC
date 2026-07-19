@@ -48,11 +48,11 @@ This document identifies and defines the internal and external interfaces of the
 
 ## 1.2. Reference
 
-[RD1] Nyx Moon - Huracan Development Logic / TEC-FRA-DOC-01004 / Issue 02 
+[RD01] Nyx Moon - Huracan Development Logic / TEC-FRA-DOC-01004 / Issue 02 
 
-[RD2] PCB PIEZOTRONICS / General Operating Guide / 2002
+[RD02] PCB PIEZOTRONICS / General Operating Guide / 2002
 
-[RD3] Gimbal Mount Assembly - Definition File / Version 001 
+[RD03] Gimbal Mount Assembly - Definition File / Version 001 
 
 
 \clearpage
@@ -60,14 +60,14 @@ This document identifies and defines the internal and external interfaces of the
 
 # 2. Overview  
 ## 2.1. Engine System and GMA 
-The figure shows the location of the GMA within the engine system, progressing from the complete engine assembly to a detailed view of the GMA.
+Figure 1 shows the location of the GMA within the engine system, progressing from the complete engine assembly to a detailed view of the GMA.
 
 ![GMA location within the engine system](<../figures/ICD_engine and GMA.png>){ width=100% }  
 
 # 3. Interfaces  
 
 ## 3.1. Internal Interfaces: GMA
-The internal interfaces comprise all joints that connect the GMA component. As shown in the exploded view below, the primary internal mechanical interface is the connection between the GMA Lug and Clevis Head. The joint is established by a single bolt-and-nut assembly and secured against loosening by a Cotter Pin.
+The internal interfaces comprise all joints that connect the GMA component. As shown in the exploded view below (Figure 2), the primary internal mechanical interface is the connection between the GMA Lug and Clevis Head. The joint is established by a single bolt-and-nut assembly and secured against loosening by a Cotter Pin.
 
 ![GMA Internal Interface](<../figures/ICD_GMA internal.png>){ width=50% }  
 
@@ -85,9 +85,9 @@ The controlled interface components and their material specifications are listed
 The external interfaces encompass all joints connecting the GMA to the engine on one side and to the vehicle on the other.  
 
 **Engine Interface**  
-The GMA is attached to the Thrust Dome of the Thrust Chamber Assembly (TCA), as defined in [RD3]. Eight stainless-steel fasteners shall secure the interface and shall be distributed symmetrically around the flange. Two stainless-steel dowel pins shall provide interface alignment.
+The GMA is attached to the Thrust Dome of the Thrust Chamber Assembly (TCA), as defined in [RD03]. Eight stainless-steel fasteners shall secure the interface and shall be distributed symmetrically around the flange (Figure 3). Two stainless-steel dowel pins shall provide interface alignment.
 
-![GMA-to-engine interface at the Thrust Domee](<../figures/ICD_GMA Thrust Dome2.png>){ width=80% } 
+![GMA-to-Engine interface at the Thrust Dome](<../figures/ICD_GMA Thrust Dome2.png>){ width=80% } 
 
 | **Interface Part** | **Designation** | **Quantity** | 
 |---|---|---|
@@ -96,11 +96,11 @@ The GMA is attached to the Thrust Dome of the Thrust Chamber Assembly (TCA), as 
 : GMA-to-engine interface hardware
 
 **Vehicle Interface**  
-The GMA interfaces with the vehicle structure through four Thrust Frame Beams, as defined in [RD3]. Each Thrust Frame Beam interfaces with two M6 threaded holes, two Ø6.6 mm through-holes, and one centering feature on the GMA Clevis Head. Across all four Beams, the interface therefore comprises eight M6 threaded holes, eight Ø6.6 mm through-holes, and four centering features. The centering features align the Beams with the Clevis Head before the fasteners are tightened. 
+The GMA interfaces with the vehicle structure through four Thrust Frame Beams, as defined in [RD03]. Each Thrust Frame Beam interfaces with two M6 threaded holes, two Ø6.6 mm through-holes, and one centering feature on the GMA Clevis Head (Figure 4). Across all four Beams, the interface therefore comprises eight M6 threaded holes, eight Ø6.6 mm through-holes, and four centering features. The centering features align the Beams with the Clevis Head before the fasteners are tightened. 
 
 ![Interfaces between GMA and Thrust Frame Beams](<../figures/ICD_GMA Vehicle.png>){ width=70% }   
 
-Table 3 show the total number of bolts, nuts, and washers required for the four Thrust Frame Beams.
+Table 3 lists the total number of bolts, nuts, and washers required for the four Thrust Frame Beams.
 
 | **Interface Part** | **Designation** | **Quantity** | 
 |---|---|---|
@@ -110,7 +110,7 @@ Table 3 show the total number of bolts, nuts, and washers required for the four 
 | Plain washer         | ISO7092-6-200HV-A4     | 16 |
 : GMA-to-vehicle interface hardware
 
-Plain washers shall be used wherever the fasteners bear against softer materials, such as the aluminum Thrust Frame Beams. An overall view of the GMA with its adjacent parts to the engine respectively vehicle and fasteners is shown below.
+Plain washers shall be used wherever the fasteners bear against softer materials, such as the aluminum Thrust Frame Beams. An overall view of the GMA with its adjacent parts to the engine respectively vehicle and fasteners is shown in Figure 5.
 
 ![Overall GMA installation with engine- and vehicle-side interface hardware](../figures/ICD_GMA-Bolts.png){ width=40%}  
 
@@ -125,7 +125,7 @@ Two M8 stainless-steel eyebolts shall be used for handling operations. Two symme
 : Interface for GMA handling
 
 ## 3.4. Instrumentation Interface
-For the current design state, a shock sensor is shall to be attached on the GMA. Three alternative 1/4-28 UNF-3B threaded mounting locations are provided on the GMA Clevis Head flange for installation of the shock accelerometer shown in Figure 7.  
+For the current design state, a shock sensor shall be attached on the GMA. Three alternative 1/4-28 UNF-3B threaded mounting locations are provided on the GMA Clevis Head flange for installation of the shock accelerometer shown in Figure 7.  
 
  ![Shock-accelerometer mounting interface](<../figures/ICD_Shock Sensor.png>){ width=55% } 
 
@@ -148,7 +148,7 @@ For the current design state, a shock sensor is shall to be attached on the GMA.
 
 ## 4.2. Instrumentation  
 
-![Installation drawing of shock accelerometer [RD3]](<../figures/ICD_GMA shock sensor.png>){ width=80% }
+![Installation drawing of shock accelerometer [RD03]](<../figures/ICD_GMA shock sensor.png>){ width=80% }
 
 \clearpage  
 
