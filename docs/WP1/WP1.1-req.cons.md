@@ -48,16 +48,16 @@ header-includes:
 # 1. Introduction
 
 ## 1.1. Scope
-Based on the preliminary requirements initially shared by The Exploration Company (TEC) for this activity [RD1], this document refines the key performance parameters. These updated requirements primarily relate to the Hopper Ground Demonstrator *Oneiros*, which is also part of a de-risking activity for the *Huracan* propulsive system [RD2]. During the development of the Gimbal Mount Assembly (GMA), the focus will be on prioritizing *Oneiros* requirements, while also considering intentions for upcoming design iterations of the *Huracan* engine and its components. 
+Based on the preliminary requirements initially shared by The Exploration Company (TEC) for this activity [RD01], this document refines the key performance parameters. These updated requirements primarily relate to the Hopper Ground Demonstrator *Oneiros*, which is also part of a de-risking activity for the *Huracan* propulsive system [RD02]. During the development of the Gimbal Mount Assembly (GMA), the focus will be on prioritizing *Oneiros* requirements, while also considering intentions for upcoming design iterations of the *Huracan* engine and its components. 
 
 ##  1.2. Reference
-[RD1] Consultant Agreement 12.12.2025 - Docusign Envelope ID: AA5722EA-0E20-45A6-BFE2-2B6D313A7FF3
+[RD01] Consultant Agreement / AA5722EA-0E20-45A6-BFE2-2B6D313A7FF3 / 2025
 
-[RD2] Design Description and Justification File - TEC-ITA-DOC-2025-01011 - Version 3
+[RD02] Design Description and Justification File / TEC-ITA-DOC-2025-01011 / Version 3
 
-[RD3] System Requirements Document - TEC-ITA-DOC-2025-01017 - Version 0
+[RD03] System Requirements Document / TEC-ITA-DOC-2025-01017 / Version 0
 
-[RD4] Modern Engineering for design of liquid propelleant rocket engines - D.Huzel / D.Huang, Vol. 147, p. 341
+[RD04] Modern Engineering For Design Of Liquid Propelleant Rocket Engines - D.Huzel / 1992
 
 \clearpage
 
@@ -67,12 +67,12 @@ Based on the preliminary requirements initially shared by The Exploration Compan
 
 **REQ-033 - Pollution requirements**  
 
-Sensitive areas, such as regions of relative motion, shall be protected against sand particles with an average size of 0.2 mm at a temperature of 49.6 °C [RD3].  
+Sensitive areas, such as regions of relative motion, shall be protected against sand particles with an average size of 0.2 mm at a temperature of 49.6 °C [RD03].  
 ________________________
 
 **REQ-020 - Ambient requirements**  
 
-According to the system requirements of *Oneiros*, the sea level conditions are defined by a pressure of 0.994 bar to 1.0276 bar and 12 % to 91 % humidity. The ambient temperature ranges from 8.3 °C to 49.6 °C. [RD3]  
+AccoRD0ing to the system requirements of *Oneiros*, the sea level conditions are defined by a pressure of 0.994 bar to 1.0276 bar and 12 % to 91 % humidity. The ambient temperature ranges from 8.3 °C to 49.6 °C. [RD03]  
 
 ## 2.2. Functional requirements
 
@@ -129,7 +129,7 @@ ________________________
 
 **REQ-008 - Plastic Deformation and crack formation**  
 
-The GMA and its parts shall not undergo plastic deformation, crack formation or other non-recoverable deformation when subjected to the operational conditions defined in this specification. Exceptions can be permissible if non-recoverable deformation is identified as a single, local phenomena, that occurs in extraordinary or single event load case. In this case the non-recoverable deformation is to be justified by analysis at least.  
+The GMA and its parts shall not undergo plastic deformation, crack formation or other non-recoverable deformation when subjected to the operational conditions defined in this specification. Exceptions can be permissible if non-recoverable deformation is identified as a single, local phenomena, that occurs in extraoRD0inary or single event load case. In this case the non-recoverable deformation is to be justified by analysis at least.  
 ________________________
 
 **REQ-001 - Operating nominal thrust**  
@@ -172,7 +172,7 @@ ________________________
 
 **REQ-036 - Lateral misalignment**  
 
-The GMA shall contain features to compensate lateral misalignment of the thrust vector up to +/-10 mm [RD4].  
+The GMA shall contain features to compensate lateral misalignment of the thrust vector up to +/-10 mm [RD04].  
 ________________________  
 
 **REQ-037 - Vacuum environment**  
