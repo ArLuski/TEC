@@ -31,7 +31,7 @@ header-includes:
   - \fancyhead[L]{\nouppercase{\leftmark}}
   - \pagestyle{fancy}
   - \fancyhf{}
-  - \fancyhead[R]{Gimbal Mount Assembly - Requirement Consolidation - Version 001}
+  - \fancyhead[R]{Gimbal Mount Assembly - Prel. Verification Control Document - Version 001}
   - \renewcommand{\headrulewidth}{0.4pt}
   - \fancyfoot[C]{\thepage}
   - \usepackage{hyperref}
@@ -47,7 +47,7 @@ header-includes:
 
 # 1. Introduction
 This document shows the preliminary verification method and plan of the Gimbal Mount Assembly (GMA) and reflects the
-status of the development associated to the requirement consolidation [RD1]. The main objective is to demonstrate that the product meets the specified requirements considering the resources, capabilities, costs and schedule of this project.
+status of the development associated to the requirement consolidation [RD01]. The main objective is to demonstrate that the product meets the specified requirements considering the resources, capabilities, costs and schedule of this project.
 
 ## 1.1. Compliance Statuses  
 The following compliance statuses are used:
@@ -62,13 +62,13 @@ The following compliance statuses are used:
 
 
 ## 1.2. Reference
-[RD1] Gimbal Mount Assembly Requirement Consolidation - Version 0
+[RD01] Gimbal Mount Assembly - Requirement Consolidation / Version 0
 
-[RD2] Space engineering - Verification - ECSS-E-ST-10-02C Rev.1 01.02.2018
+[RD02] Space engineering - Verification / ECSS-E-ST-10-02C Rev.1 / 2018
 
-[RD3] Huracan - TCA Interface Control Document - TEC-FRA-DOC-202401143 - Version 1-draft
+[RD03] Huracan - TCA Interface Control Document / TEC-FRA-DOC-202401143 / Version 1
 
-[RD4] Modern Engineering for design of liquid propelleant rocket engines - D.Huzel / D.Huang, Vol. 147, p. 341
+[RD04] Modern Engineering for design of liquid propelleant rocket engines - D.Huzel / 1992
 
 \clearpage
 
@@ -82,10 +82,10 @@ the proposed method.
 All quantitative values shall be provided in SI units  
 
 ## 2.3. Language
-All notices, documents, deliverables and other communications between the main parties, including by their respective employees and related Third Parties shall be in English.  
+All notices, documents, deliverables and other communications between the main parties, including by their respective employees and related ThiRD0 Parties shall be in English.  
 
 ## 2.4. Verification Methods
-The verification methods used for the development of the GMA are closely aligned with The Exploration Company’s (TEC) verification policy and the ECSS standard [RD2]: *Review of Design, Analysis, Inspection, and Test*. Verification shall be carried out using one or more of these methods.
+The verification methods used for the development of the GMA are closely aligned with The Exploration Company’s (TEC) verification policy and the ECSS standaRD0 [RD02]: *Review of Design, Analysis, Inspection, and Test*. Verification shall be carried out using one or more of these methods.
 
 ### 2.4.1. RoD: Review of Design  
 This is typically a review of the as-built drawings to confirm that a design feature has been incorporated into the
@@ -95,7 +95,7 @@ design. It also includes reviews of design documents like the definition-, justi
 Verification by analysis shall contain theoretical evaluation of the design. Techniques like qualitative design assesments, modelling and computatuional simulation and similarity assessments describe this verification method. Analytical methods selected for verification shall be supported by appropriate rationale and detailed documentation (assumptions, limitations, uncertainties). Analysis covers also the evaluation of empirical data that can be provided by the customer (tests or validated analysis), investigations for similar designs or heritage.  
 
 ### 2.4.3. I: Inspection  
-Inspection verifies physical characteristics that determine compliance of the item with requirements normally without the use of special laboratory equipment, procedures, test support items, or services. Standard methods and tools are utilized for inspection such as visual assessment, gauges, etc., to verify compliance with the requirements. Hardware may be inspected for the following:
+Inspection verifies physical characteristics that determine compliance of the item with requirements normally without the use of special laboratory equipment, procedures, test support items, or services. StandaRD0 methods and tools are utilized for inspection such as visual assessment, gauges, etc., to verify compliance with the requirements. HaRD0ware may be inspected for the following:
 - Construction
 - Workmanship
 - Physical condition
@@ -106,7 +106,7 @@ materials, processes). Inspection does NOT include Review of Design (ROD).
 
 ### 2.4.4. T: Test  
 Test is a method of verification wherein requirements are verified by measurement during or after the controlled
-application of functional and environmental stimuli. These measurements may require the use of laboratory equipment, recorded data, procedures, test support items, or services. For all verification, qualification, and acceptance test activities, pass or fail test criteria or acceptance tolerance bands (based upon design and performance requirements)
+application of functional and environmental stimuli. These measurements may require the use of laboratory equipment, recoRD0ed data, procedures, test support items, or services. For all verification, qualification, and acceptance test activities, pass or fail test criteria or acceptance tolerance bands (based upon design and performance requirements)
 shall be specified before conducting the test. This will ensure that the actual performance of tested equipment or systems meets or exceeds specifications.
 
 # 3. Preliminary Verification Control Document  
@@ -123,7 +123,7 @@ Verification method(s):
 ________________________
 
 **REQ-020 - Ambient requirements**  
-*According to the system requirements of *Oneiros*, the sea level conditions are defined by a pressure of 0.994 bar to 1.0276 bar and 12 % to 91 % humidity. The expected ambient temperature range is 8.3 °C to 49.6 °C.*  
+*AccoRD0ing to the system requirements of *Oneiros*, the sea level conditions are defined by a pressure of 0.994 bar to 1.0276 bar and 12 % to 91 % humidity. The expected ambient temperature range is 8.3 °C to 49.6 °C.*  
  
 Verification method(s): 
 
@@ -223,7 +223,7 @@ ________________________
 
 Verification method(s):  
 
-- **RoD, I**: The interface constraints are to be extracted from Interface Control Documents (ICD) like [RD3].  
+- **RoD, I**: The interface constraints are to be extracted from Interface Control Documents (ICD) like [RD03].  
 
 ________________________  
 
@@ -249,7 +249,7 @@ ________________________
 
 **REQ-008 - Plastic Deformation and crack formation**  
 
-*The GMA and its parts shall not undergo plastic deformation, crack formation or other non-recoverable deformation when subjected to the operational conditions defined in this specification. Exceptions can be permissible if non-recoverable deformation is identified as a single, local phenomena, that occurs in extraordinary or single event load case. In this case the non-recoverable deformation is to be justified by analysis at least.*  
+*The GMA and its parts shall not undergo plastic deformation, crack formation or other non-recoverable deformation when subjected to the operational conditions defined in this specification. Exceptions can be permissible if non-recoverable deformation is identified as a single, local phenomena, that occurs in extraoRD0inary or single event load case. In this case the non-recoverable deformation is to be justified by analysis at least.*  
 
 Verification method(s):  
 
@@ -328,7 +328,7 @@ ________________________
 
 **REQ-036 - Lateral misalignment**    
 
-*The GMA shall contain features to compensate lateral misalignment of the thrust vector up to +/-10 mm [RD4].*   
+*The GMA shall contain features to compensate lateral misalignment of the thrust vector up to +/-10 mm [RD04].*   
 
 Verification method(s): 
 
