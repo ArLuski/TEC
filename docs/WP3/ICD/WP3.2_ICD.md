@@ -50,7 +50,7 @@ This document identifies and defines the internal and external interfaces of the
 
 [RD01] Nyx Moon - Huracan Development Logic / TEC-FRA-DOC-01004 / Issue 02 
 
-[RD02] PCB PIEZOTRONICS / General Operating Guide / 2002
+[RD02] PCB PIEZOTRONICS - General Operating Guide / 2002
 
 [RD03] Gimbal Mount Assembly - Definition File / Version 001 
 

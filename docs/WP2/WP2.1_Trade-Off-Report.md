@@ -31,7 +31,7 @@ header-includes:
   - \fancyhead[L]{\nouppercase{\leftmark}}
   - \pagestyle{fancy}
   - \fancyhf{}
-  - \fancyhead[R]{Gimbal Mount Assembly - Requirement Consolidation - Version 001}
+  - \fancyhead[R]{Gimbal Mount Assembly - Trade-Off Report - Version 001}
   - \renewcommand{\headrulewidth}{0.4pt}
   - \fancyfoot[C]{\thepage}
   - \usepackage{hyperref}
@@ -50,23 +50,23 @@ header-includes:
 This document presents the Gimbal Mount Assembly (GMA) Trade-Off Report. The objective of this file is to support the concept design decision among alternative solutions taking into account technical and programmatic constraints. 
 
 ##  1.2. Reference
-[RD1] A.Lukanowski - Gimbal Mount Assembly - Requirement Consolidation / Version 0 - Luebeck 2026
+[RD01] A.Lukanowski - Gimbal Mount Assembly - Requirement Consolidation / Version 0 - Luebeck 2026
 
-[RD2] A.Lukanowski - Gimbal Mount Assembly - Preliminary Verification Control Document / Version 0 - Luebeck 2026
+[RD02] A.Lukanowski - Gimbal Mount Assembly - Preliminary Verification Control Document / Version 0 - Luebeck 2026
 
-[RD3] ECSS-E-ST-10C Rev.1 - System engineering general requirements
+[RD03] ECSS-E-ST-10C Rev.1 - System engineering general requirements
 
-[RD4] T.L. Saaty - Decision Making for Leaders: The Analytic Hierarchy Process for Decision in a Complex World - Pittsburgh 1990
+[RD04] T.L. Saaty - Decision Making for Leaders: The Analytic Hierarchy Process for Decision in a Complex World - Pittsburgh 1990
 
-[RD5] D.Huzel, D.Huang - Modern Engineering For Design Of Liquid-Propellant Rocket Engines - Washington 1992
+[RD05] D.Huzel, D.Huang - Modern Engineering For Design Of Liquid-Propellant Rocket Engines - Washington 1992
 
-[RD6] A.Lukanowski - 20260310_Luka_GMA_Tradeoff_AHP / Excel file - Luebeck 2026
+[RD06] A.Lukanowski - 20260310_Luka_GMA_Tradeoff_AHP / Excel file - Luebeck 2026
 
-[RD7] P.Vinet - NYX Moon - Huracan Development Logic - TEC-FRA-DOC-2024-01004 - Bordeaux 2024
+[RD07] P.Vinet - NYX Moon - Huracan Development Logic - TEC-FRA-DOC-2024-01004 - Bordeaux 2024
 
-[RD8] A.Lukanowski - 20260309_Luka_GMA_Tradeoff_Decision Matrix.xlsx / Excel file - Luebeck 2026
+[RD08] A.Lukanowski - 20260309_Luka_GMA_Tradeoff_Decision Matrix.xlsx / Excel file - Luebeck 2026
 
-[RD9] P. Muraro - System Requirements Document - TEC-ITA-DOC-2025-01017 / Version 0
+[RD90] P. Muraro - System Requirements Document - TEC-ITA-DOC-2025-01017 / Version 0
 
 \clearpage
 
